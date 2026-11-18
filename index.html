@@ -1,0 +1,1718 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chiến Dịch: Xây Dựng Tình Bạn Đẹp - Nói Không Với Bạo Lực Học Đường | THPT Mường Lầm</title>
+  <meta name="description" content="Chiến dịch truyền thông học đường năm học 2026 - 2027 do BCH Đoàn xã Mường Lầm chỉ đạo và BCH Đoàn Trường THPT Mường Lầm thực hiện.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts: Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti for Celebration -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            doan: {
+              DEFAULT: '#0066B3', // Xanh thanh niên chuẩn Đoàn
+              dark: '#004C87',
+              light: '#E6F0F9',
+              hover: '#005596'
+            },
+            taybac: {
+              green: '#10B981', // Xanh rừng Mường Lầm
+              warm: '#F59E0B',  // Vàng cam ấm áp nếp nương
+              red: '#ED1C24',   // Đỏ cờ Đoàn
+              stone: '#64748B'
+            }
+          },
+          fontFamily: {
+            sans: ['"Be Vietnam Pro"', 'sans-serif'],
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'bounce-slow': 'bounce 2s infinite',
+            'wave-bar': 'wave 1.2s ease-in-out infinite',
+            'marquee': 'marquee 25s linear infinite',
+          },
+          keyframes: {
+            wave: {
+              '0%, 100%': { height: '8px' },
+              '50%': { height: '28px' },
+            },
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Brocade pattern border accent */
+    .brocade-border {
+      background-image: repeating-linear-gradient(45deg, #0066B3 0, #0066B3 10px, #F59E0B 10px, #F59E0B 20px, #10B981 20px, #10B981 30px);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #F1F5F9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #94A3B8;
+      border-radius: 9999px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #0066B3;
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-doan selection:text-white">
+
+  <!-- ==================== HEADER (NAVIGATION) ==================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Logos -->
+      <a href="#" class="flex items-center gap-3 group">
+        <!-- Logo Đoàn TNCS Hồ Chí Minh -->
+        <div class="relative w-12 h-12 flex-shrink-0 bg-white p-0.5 rounded-full shadow-sm border border-slate-100 flex items-center justify-center">
+          <img 
+            src="C:/Users/Administrator/.gemini/antigravity/brain/8b6919e3-9b00-4f51-a26d-884f377e2f23/.user_uploaded/media_1795032603727_be193789.png" 
+            alt="Huy hiệu Đoàn TNCS Hồ Chí Minh" 
+            class="w-full h-full object-contain"
+            onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/vi/thumb/9/9f/Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg/1024px-Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg.png';"
+          >
+        </div>
+
+        <!-- Co-branding Titles -->
+        <div class="flex flex-col text-left">
+          <div class="flex items-center gap-1.5 text-[11px] font-bold tracking-wider text-slate-500 uppercase">
+            <span class="text-doan font-black">BCH ĐOÀN XÃ MƯỜNG LẦM</span>
+            <span class="text-slate-300">|</span>
+            <span class="text-emerald-700">ĐOÀN TRƯỜNG THPT MƯỜNG LẦM</span>
+          </div>
+          <h1 class="text-sm sm:text-base font-extrabold text-slate-900 group-hover:text-doan transition-colors leading-tight">
+            Xây Dựng Tình Bạn Đẹp – 2026
+          </h1>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#gioi-thieu" class="hover:text-doan transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-compass text-xs text-slate-400"></i> Giới Thiệu
+        </a>
+        <a href="#lo-trinh" class="hover:text-doan transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-calendar-check text-xs text-slate-400"></i> Lộ Trình 4 Tuần
+        </a>
+        <a href="#podcast" class="hover:text-doan transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-podcast text-xs text-doan"></i> Radio Podcast
+        </a>
+        <a href="#hom-thu" class="hover:text-doan transition-colors flex items-center gap-1.5">
+          <i class="fa-solid fa-envelope-open-text text-xs text-taybac-warm"></i> Hòm Thư
+        </a>
+        <a href="#cam-ket" class="bg-doan hover:bg-doan-hover text-white px-4 py-2 rounded-full font-bold shadow-sm shadow-doan/30 transition-all hover:scale-105 active:scale-95 flex items-center gap-2">
+          <i class="fa-solid fa-signature"></i> Ký Cam Kết
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="md:hidden text-slate-700 hover:text-doan p-2 text-xl focus:outline-none" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-5 shadow-lg">
+      <div class="flex flex-col gap-4 text-base font-medium text-slate-700">
+        <a href="#gioi-thieu" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center gap-3">
+          <i class="fa-solid fa-compass text-doan"></i> Giới Thiệu Chiến Dịch
+        </a>
+        <a href="#lo-trinh" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center gap-3">
+          <i class="fa-solid fa-calendar-check text-emerald-600"></i> Lộ Trình Triển Khai
+        </a>
+        <a href="#podcast" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center gap-3">
+          <i class="fa-solid fa-podcast text-doan"></i> Radio Tình Bạn Mường Lầm
+        </a>
+        <a href="#hom-thu" class="mobile-nav-link py-2 border-b border-slate-100 flex items-center gap-3">
+          <i class="fa-solid fa-envelope-open-text text-taybac-warm"></i> Hòm Thư "Điều Em Muốn Nói"
+        </a>
+        <a href="#cam-ket" class="mobile-nav-link py-2 text-doan font-bold flex items-center gap-3">
+          <i class="fa-solid fa-signature"></i> Bảng Vàng Cam Kết
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="gioi-thieu" class="relative overflow-hidden bg-gradient-to-b from-blue-50/80 via-white to-slate-50 py-16 lg:py-24 border-b border-slate-200">
+      <!-- Decorative Background shapes -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+      <div class="absolute top-1/2 -left-24 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Copy & Actions -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            
+            <!-- Badges -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-doan text-xs sm:text-sm font-bold mb-6">
+              <span class="w-2 h-2 rounded-full bg-doan animate-ping"></span>
+              <span>Chiến Dịch Truyền Thông Đầu Năm Học 2026 – 2027</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 leading-tight mb-4">
+              XÂY DỰNG TÌNH BẠN ĐẸP
+              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-doan via-blue-600 to-taybac-green mt-1">
+                NÓI KHÔNG VỚI BẠO LỰC HỌC ĐƯỜNG
+              </span>
+            </h1>
+
+            <!-- Inspiring Slogan -->
+            <div class="my-6 p-4 rounded-2xl bg-white border-l-4 border-doan shadow-sm inline-block text-left">
+              <p class="text-xs uppercase font-extrabold tracking-wider text-doan mb-1 flex items-center gap-1.5">
+                <i class="fa-solid fa-quote-left"></i> Khẩu hiệu hành động:
+              </p>
+              <p class="text-base sm:text-lg font-bold text-slate-800 italic">
+                “Mường Lầm Chung Mái Trường Xanh – Nắm Tay Gắn Kết, Chẳng Đành Tổn Thương!”
+              </p>
+            </div>
+
+            <!-- Description -->
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+              Chào mừng hơn 1.000 đoàn viên, học sinh Trường THPT Mường Lầm bước vào năm học mới! Đặc biệt đồng hành cùng các bạn học sinh khối 10 mới nhập học, các bạn ở nội trú - bán trú từ các bản xa về trung tâm xã hòa nhập yêu thương, sẻ chia và tự tin tỏa sáng.
+            </p>
+
+            <!-- Action Buttons (CTAs) -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <a href="#podcast" class="px-6 py-3.5 rounded-xl bg-doan hover:bg-doan-hover text-white font-bold text-sm sm:text-base shadow-lg shadow-doan/30 hover:shadow-xl transition-all hover:-translate-y-0.5 flex items-center gap-2.5">
+                <i class="fa-solid fa-circle-play text-lg animate-pulse"></i>
+                Nghe Radio Podcast
+              </a>
+
+              <a href="#cam-ket" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-50 text-slate-800 border-2 border-slate-300 hover:border-doan font-bold text-sm sm:text-base transition-all hover:-translate-y-0.5 flex items-center gap-2.5 shadow-sm">
+                <i class="fa-solid fa-hand-holding-heart text-taybac-red text-lg"></i>
+                Ký Tên Cam Kết Ngay
+              </a>
+
+              <a href="#hom-thu" class="px-4 py-3.5 rounded-xl text-slate-600 hover:text-doan text-sm font-semibold flex items-center gap-2">
+                <i class="fa-solid fa-lock text-slate-400"></i> Hòm thư ẩn danh
+              </a>
+            </div>
+
+            <!-- Hashtag Pills -->
+            <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-2 text-xs font-semibold text-slate-500">
+              <span class="bg-white px-3 py-1 rounded-full border border-slate-200">#TinhBanDepMuongLam</span>
+              <span class="bg-white px-3 py-1 rounded-full border border-slate-200">#NoiKhongVoiBaoLucHocDuong</span>
+              <span class="bg-white px-3 py-1 rounded-full border border-slate-200">#MaiTruongYeuThuong2026</span>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Visual Showcase Card with Official Logo Placement -->
+          <div class="lg:col-span-5">
+            <div class="relative mx-auto max-w-md bg-white rounded-3xl shadow-xl border border-slate-200/80 overflow-hidden group">
+              
+              <!-- Card Header with Logo Đoàn Lockup -->
+              <div class="bg-gradient-to-r from-doan to-blue-800 p-4 text-white flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 bg-white rounded-full p-0.5 shadow-md flex items-center justify-center flex-shrink-0">
+                    <img 
+                      src="C:/Users/Administrator/.gemini/antigravity/brain/8b6919e3-9b00-4f51-a26d-884f377e2f23/.user_uploaded/media_1795032603727_be193789.png" 
+                      alt="Logo Đoàn" 
+                      class="w-full h-full object-contain"
+                      onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/vi/thumb/9/9f/Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg/1024px-Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg.png';"
+                    >
+                  </div>
+                  <div>
+                    <p class="text-[10px] uppercase font-bold text-blue-200 tracking-wider">Đoàn TNCS Hồ Chí Minh</p>
+                    <p class="text-xs font-extrabold text-white">Đoàn Trường THPT Mường Lầm</p>
+                  </div>
+                </div>
+                <span class="bg-white/20 text-[10px] font-bold px-2 py-0.5 rounded text-white uppercase">
+                  2026 - 2027
+                </span>
+              </div>
+
+              <!-- Graphic / Illustration Container -->
+              <div class="relative h-64 sm:h-72 bg-gradient-to-br from-emerald-100 via-blue-50 to-amber-100 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+                <div class="absolute inset-0 opacity-15 pointer-events-none flex items-end justify-center">
+                  <i class="fa-solid fa-mountain text-9xl text-emerald-900"></i>
+                </div>
+
+                <div class="relative z-10 w-24 h-24 rounded-full bg-white shadow-lg border-4 border-amber-300 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                  <i class="fa-solid fa-people-roof text-4xl text-doan"></i>
+                </div>
+
+                <div class="relative z-10">
+                  <h2 class="text-lg font-black text-slate-800">MÁI TRƯỜNG BÁN TRÚ YÊU THƯƠNG</h2>
+                  <p class="text-xs text-slate-600 mt-1 max-w-xs">
+                    Nơi hội tụ học sinh Thái, Mông, Khơ Mú, Xinh Mun, Kinh cùng chung một nhà, nắm tay bước tới tương lai.
+                  </p>
+                </div>
+
+                <div class="absolute bottom-3 left-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-[11px] font-bold text-emerald-700 shadow-sm border border-emerald-200 flex items-center gap-1.5">
+                  <i class="fa-solid fa-shield-heart"></i> 100% An toàn học đường
+                </div>
+                <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full text-[11px] font-bold text-doan shadow-sm border border-blue-200 flex items-center gap-1.5">
+                  <i class="fa-solid fa-podcast"></i> 3 Tập Radio
+                </div>
+              </div>
+
+              <!-- Card Quick Stats Bar -->
+              <div class="grid grid-cols-3 divide-x divide-slate-100 bg-white py-3.5 text-center text-xs">
+                <div>
+                  <span class="block text-base font-extrabold text-doan">100%</span>
+                  <span class="text-slate-500 text-[10px]">Chi đoàn ký cam kết</span>
+                </div>
+                <div>
+                  <span id="heroPledgeCount" class="block text-base font-extrabold text-emerald-600">842+</span>
+                  <span class="text-slate-500 text-[10px]">Học sinh tham gia</span>
+                </div>
+                <div>
+                  <span class="block text-base font-extrabold text-taybac-warm">24/7</span>
+                  <span class="text-slate-500 text-[10px]">Hỗ trợ tâm lý</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 1: LỘ TRÌNH 4 TUẦN ==================== -->
+    <section id="lo-trinh" class="py-16 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-xs font-black uppercase tracking-widest text-doan bg-blue-50 px-3 py-1 rounded-full border border-blue-200">
+            Kế Hoạch Hành Động
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mt-3 mb-4">
+            Lộ Trình Triển Khai 4 Tuần Đầu Năm Học 2026 – 2027
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Mỗi tuần một chủ đề sâu sắc, kết hợp đồng bộ giữa Lễ Khai giảng, các tiết sinh hoạt dưới cờ thứ Hai, hệ thống phát thanh trường và mạng xã hội.
+          </p>
+        </div>
+
+        <!-- 4 Weeks Timeline Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+          
+          <!-- Week 1 -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-doan hover:shadow-md transition-all group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-black px-2.5 py-1 rounded-md bg-blue-100 text-doan">TUẦN 1</span>
+                <span class="text-xs text-slate-400 font-semibold">01/9 – 06/9/2026</span>
+              </div>
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-doan flex items-center justify-center text-xl mb-4 group-hover:bg-doan group-hover:text-white transition-colors">
+                <i class="fa-solid fa-hands-holding-child"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900 mb-2">
+                CHẠM: Chào Mường Lầm, Mình Cùng Là Bạn
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                • Đón tân học sinh K10 nhập học, hỗ trợ nhận phòng bán trú.<br>
+                • Lễ Khai giảng 05/9: Ra mắt <strong>"Cây Cam kết Tình bạn Xanh"</strong> in dấu vân tay sắc màu.<br>
+                • Phát động thay Avatar Frame trên Fanpage.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/80 text-[11px] font-bold text-doan flex items-center justify-between">
+              <span>Trọng tâm: Khối 10 mới</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Week 2 -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-emerald-500 hover:shadow-md transition-all group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-black px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-700">TUẦN 2</span>
+                <span class="text-xs text-slate-400 font-semibold">08/9 – 13/9/2026</span>
+              </div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center text-xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-house-chimney-user"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900 mb-2">
+                THẤU: Cùng Ăn, Cùng Ở, Cùng Sẻ Chia
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                • Sinh hoạt dưới cờ (Thứ Hai 08/9): Tọa đàm <em>"Người lạ hóa bạn thân nơi bán trú"</em>.<br>
+                • <strong>Phát thanh Podcast Tập 1:</strong> <em>"Chung một nhịp cầu bản xa"</em>.<br>
+                • Đặt hòm thư vật lý tại nhà ăn bán trú và mở hộp thư số.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/80 text-[11px] font-bold text-emerald-600 flex items-center justify-between">
+              <span>Trọng tâm: Nền nếp Bán trú</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Week 3 -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-amber-500 hover:shadow-md transition-all group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-black px-2.5 py-1 rounded-md bg-amber-100 text-amber-700">TUẦN 3</span>
+                <span class="text-xs text-slate-400 font-semibold">15/9 – 20/9/2026</span>
+              </div>
+              <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-xl mb-4 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900 mb-2">
+                TỈNH: Bản Số Văn Minh, Lời Nói Đẹp
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                • Phối hợp <strong>Công an xã Mường Lầm</strong> tuyên truyền an ninh mạng & chế tài bạo lực học đường.<br>
+                • <strong>Phát thanh Podcast Tập 2:</strong> <em>"Bão giông sau màn hình nhỏ"</em> (Bạo lực TikTok).<br>
+                • Thử thách trực tuyến: Bình luận văn minh.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/80 text-[11px] font-bold text-amber-600 flex items-center justify-between">
+              <span>Trọng tâm: Công an xã phối hợp</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Week 4 -->
+          <div class="bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:border-purple-500 hover:shadow-md transition-all group flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-black px-2.5 py-1 rounded-md bg-purple-100 text-purple-700">TUẦN 4</span>
+                <span class="text-xs text-slate-400 font-semibold">22/9 – 27/9/2026</span>
+              </div>
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center text-xl mb-4 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <h3 class="text-base font-extrabold text-slate-900 mb-2">
+                HÀNH: Nắm Chặt Tay Nhau, Vững Bước
+              </h3>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                • Diễn đàn tương tác: <em>"Khi bạn bị bắt nạt, bạn sẽ làm gì?"</em>.<br>
+                • <strong>Phát thanh Podcast Tập 3:</strong> <em>"Dũng cảm lên tiếng – Mình ở bên bạn"</em>.<br>
+                • Ngày hội trò chơi dân gian kết nối (kéo co, đẩy gậy, ném còn). Sơ kết chiến dịch.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200/80 text-[11px] font-bold text-purple-600 flex items-center justify-between">
+              <span>Trọng tâm: Ngày hội & Khen thưởng</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 2: RADIO TÌNH BẠN MƯỜNG LẦM ==================== -->
+    <section id="podcast" class="py-16 bg-slate-900 text-white relative overflow-hidden">
+      <!-- Hidden Real Audio Element for Optional MP3 playback -->
+      <audio id="realAudioElement" class="hidden" preload="none"></audio>
+
+      <!-- Glow ambient -->
+      <div class="absolute -top-32 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-0 right-10 w-80 h-80 bg-emerald-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold mb-3">
+            <i class="fa-solid fa-tower-broadcast animate-pulse text-amber-400"></i>
+            TIỂU PHẨM KỊCH NÓI PHÁT THANH HỌC ĐƯỜNG
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-black text-white">
+            Radio Tình Bạn Mường Lầm
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base mt-2">
+            Phát sóng vào giờ ra chơi thứ Ba & thứ Năm qua hệ thống truyền thanh nhà trường, đồng thời đăng tải trên Fanpage và TikTok.
+          </p>
+        </div>
+
+        <!-- Audio Player Main Card -->
+        <div class="max-w-4xl mx-auto bg-slate-800/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl mb-10">
+          
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            
+            <!-- Episode Cover Artwork with Logo Đoàn badge -->
+            <div class="md:col-span-5">
+              <div class="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-doan to-emerald-700 p-6 flex flex-col justify-between shadow-lg border border-slate-600 group">
+                
+                <!-- Logo Đoàn góc trên bên trái -->
+                <div class="flex items-center justify-between">
+                  <div class="w-10 h-10 bg-white p-0.5 rounded-full shadow-md flex items-center justify-center">
+                    <img 
+                      src="C:/Users/Administrator/.gemini/antigravity/brain/8b6919e3-9b00-4f51-a26d-884f377e2f23/.user_uploaded/media_1795032603727_be193789.png" 
+                      alt="Logo Đoàn" 
+                      class="w-full h-full object-contain"
+                      onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/vi/thumb/9/9f/Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg/1024px-Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg.png';"
+                    >
+                  </div>
+                  <span id="playerBadge" class="bg-black/40 backdrop-blur-md text-[11px] font-bold text-amber-300 px-3 py-1 rounded-full border border-white/10">
+                    Tập 1 • Kịch nói
+                  </span>
+                </div>
+
+                <!-- Center Artwork Icon & Soundwave -->
+                <div class="text-center py-4">
+                  <div class="w-16 h-16 mx-auto rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-3xl text-white mb-3 shadow-inner">
+                    <i id="centerPlayIcon" class="fa-solid fa-microphone-lines"></i>
+                  </div>
+                  <p id="playerEpisodeSub" class="text-xs uppercase font-extrabold text-blue-200 tracking-wider">Radio Mường Lầm 2026</p>
+                  <h4 id="playerEpisodeTitle" class="text-lg font-black text-white mt-1">Chung Một Nhịp Cầu Bản Xa</h4>
+                </div>
+
+                <!-- Live Soundwave Animation Bars -->
+                <div id="waveContainer" class="flex items-center justify-center gap-1.5 h-8 opacity-40 transition-opacity">
+                  <span class="w-1.5 bg-amber-400 rounded-full h-2"></span>
+                  <span class="w-1.5 bg-amber-400 rounded-full h-4"></span>
+                  <span class="w-1.5 bg-amber-400 rounded-full h-6"></span>
+                  <span class="w-1.5 bg-amber-400 rounded-full h-3"></span>
+                  <span class="w-1.5 bg-amber-400 rounded-full h-7"></span>
+                  <span class="w-1.5 bg-amber-400 rounded-full h-4"></span>
+                  <span class="w-1.5 bg-amber-400 rounded-full h-2"></span>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Player Controls & Current Track Info -->
+            <div class="md:col-span-7 flex flex-col justify-center">
+              
+              <div class="mb-4">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-1">
+                  <span class="text-xs font-bold text-emerald-400 uppercase tracking-widest flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Đang phát thanh • THPT Mường Lầm
+                  </span>
+                  
+                  <!-- Audio Source Indicator Badge -->
+                  <span id="audioSourceBadge" class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
+                    <i class="fa-solid fa-robot text-xs"></i> Giọng đọc AI Web Speech
+                  </span>
+                </div>
+
+                <h3 id="currentTrackTitle" class="text-xl sm:text-2xl font-black text-white mt-1">
+                  Tập 1: Bỡ Ngỡ Lớp 10 & Rào Cản Hòa Nhập
+                </h3>
+                <p id="currentTrackDesc" class="text-slate-400 text-xs sm:text-sm mt-1 leading-relaxed">
+                  Câu chuyện về Mẩy - nữ sinh người Thái mang xôi nếp nương ra trường huyện và tấm lòng ấm áp của các anh chị khóa trên.
+                </p>
+              </div>
+
+              <!-- Time & Progress Scrubber -->
+              <div class="mb-4">
+                <div class="relative w-full h-2.5 bg-slate-700 rounded-full cursor-pointer overflow-hidden" id="progressBarContainer" title="Bấm để tua đoạn đọc">
+                  <div id="progressBar" class="absolute top-0 left-0 h-full bg-gradient-to-r from-doan to-amber-400 rounded-full w-0 transition-all duration-200"></div>
+                </div>
+                <div class="flex justify-between text-xs font-semibold text-slate-400 mt-2">
+                  <span id="currentTime">00:00</span>
+                  <span id="totalDuration">06:30</span>
+                </div>
+              </div>
+
+              <!-- Control Buttons -->
+              <div class="flex flex-wrap items-center justify-between gap-3 mb-4">
+                
+                <div class="flex items-center gap-3">
+                  <!-- Prev Button -->
+                  <button id="prevTrackBtn" class="w-10 h-10 rounded-full bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors" title="Tập trước">
+                    <i class="fa-solid fa-backward-step"></i>
+                  </button>
+
+                  <!-- Big Play / Pause Button -->
+                  <button id="mainPlayBtn" class="w-14 h-14 rounded-full bg-doan hover:bg-doan-hover text-white flex items-center justify-center text-xl shadow-lg shadow-doan/40 hover:scale-105 active:scale-95 transition-all" title="Bấm để Nghe / Tạm dừng">
+                    <i id="playIcon" class="fa-solid fa-play ml-0.5"></i>
+                  </button>
+
+                  <!-- Next Button -->
+                  <button id="nextTrackBtn" class="w-10 h-10 rounded-full bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors" title="Tập tiếp theo">
+                    <i class="fa-solid fa-forward-step"></i>
+                  </button>
+                </div>
+
+                <!-- Script Modal Trigger Button -->
+                <button id="openScriptModalBtn" class="px-4 py-2 rounded-xl bg-slate-700/80 hover:bg-slate-700 text-amber-300 hover:text-amber-200 text-xs font-bold border border-amber-400/30 flex items-center gap-2 transition-colors">
+                  <i class="fa-solid fa-scroll"></i>
+                  <span>Xem kịch bản chi tiết</span>
+                </button>
+
+              </div>
+
+              <!-- LIVE SUBTITLE / KARAOKE BOX (Đồng bộ lời thoại khi AI đọc kịch bản) -->
+              <div id="liveSubtitleBox" class="p-3.5 rounded-2xl bg-slate-900/90 border border-slate-700/90 shadow-inner flex items-start gap-3 transition-all">
+                <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center flex-shrink-0 text-sm mt-0.5">
+                  <i id="subtitleSpeakerIcon" class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="overflow-hidden flex-1">
+                  <div class="flex items-center justify-between text-[11px] font-bold text-slate-400 mb-1">
+                    <span id="subtitleSpeaker" class="text-amber-300 font-extrabold uppercase tracking-wide">🎙️ Lời Dẫn Phát Thanh Viên</span>
+                    <span id="subtitleStatus" class="text-[10px] text-slate-400">Sẵn sàng phát</span>
+                  </div>
+                  <p id="subtitleText" class="text-xs sm:text-sm text-slate-200 font-medium italic leading-relaxed transition-all">
+                    Bấm nút Play để lắng nghe tiểu phẩm kịch truyền thanh qua giọng đọc AI tự động...
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- 3 Episodes Playlist Selector Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+          
+          <!-- Item 1 -->
+          <div class="playlist-card active cursor-pointer bg-slate-800 hover:bg-slate-750 p-4 rounded-2xl border-2 border-doan transition-all" data-index="0">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-doan text-white flex items-center justify-center font-black text-sm flex-shrink-0">
+                01
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-[10px] uppercase font-bold text-blue-300">Tuần 2 • Hòa nhập K10</span>
+                <h5 class="text-sm font-bold text-white truncate">Chung Một Nhịp Cầu Bản Xa</h5>
+                <p class="text-[11px] text-slate-400 truncate">Nhân vật: Mẩy, Lan, Tuấn</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="playlist-card cursor-pointer bg-slate-800/60 hover:bg-slate-750 p-4 rounded-2xl border-2 border-transparent hover:border-slate-600 transition-all" data-index="1">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-slate-700 text-slate-300 flex items-center justify-center font-black text-sm flex-shrink-0">
+                02
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-[10px] uppercase font-bold text-amber-300">Tuần 3 • Bạo lực mạng</span>
+                <h5 class="text-sm font-bold text-white truncate">Bão Giông Sau Màn Hình Nhỏ</h5>
+                <p class="text-[11px] text-slate-400 truncate">Nhân vật: Vàng, Nhóm bạn TikTok</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="playlist-card cursor-pointer bg-slate-800/60 hover:bg-slate-750 p-4 rounded-2xl border-2 border-transparent hover:border-slate-600 transition-all" data-index="2">
+            <div class="flex items-center gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-slate-700 text-slate-300 flex items-center justify-center font-black text-sm flex-shrink-0">
+                03
+              </div>
+              <div class="overflow-hidden">
+                <span class="text-[10px] uppercase font-bold text-emerald-300">Tuần 4 • Dũng cảm bảo vệ</span>
+                <h5 class="text-sm font-bold text-white truncate">Dũng Cảm Lên Tiếng – Có Mình Đây!</h5>
+                <p class="text-[11px] text-slate-400 truncate">Nhân vật: Dũng, Phong, Thầy Đoàn</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SCRIPT MODAL (POPUP) ==================== -->
+    <div id="scriptModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/70 backdrop-blur-sm p-4">
+      <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl border border-slate-200 overflow-hidden animate-in fade-in zoom-in duration-200">
+        
+        <!-- Modal Header -->
+        <div class="px-6 py-4 bg-gradient-to-r from-doan to-blue-800 text-white flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <i class="fa-solid fa-book-open-reader text-xl text-amber-300"></i>
+            <div>
+              <span id="modalEpNumber" class="text-[10px] uppercase tracking-wider font-bold text-blue-200">Kịch bản chi tiết Tập 1</span>
+              <h4 id="modalEpTitle" class="text-base font-extrabold text-white">Chung Một Nhịp Cầu Bản Xa</h4>
+            </div>
+          </div>
+          <button id="closeScriptModalBtn" class="text-white/80 hover:text-white text-xl p-1 focus:outline-none" aria-label="Đóng">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <!-- Modal Body Content -->
+        <div id="modalBody" class="p-6 overflow-y-auto custom-scrollbar text-sm text-slate-700 space-y-4 leading-relaxed">
+          <!-- Dynamic Content Injected via JS -->
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="px-6 py-3.5 bg-slate-50 border-t border-slate-200 flex items-center justify-between text-xs text-slate-500">
+          <span>Ban Biên kịch: CLB Truyền thông THPT Mường Lầm</span>
+          <button id="closeScriptModalBtn2" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold rounded-lg transition-colors">
+            Đóng Lại
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ==================== SECTION 3: HÒM THƯ "ĐIỀU EM MUỐN NÓI" ==================== -->
+    <section id="hom-thu" class="py-16 bg-slate-50 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Left Column: Trust & Guarantees -->
+          <div class="lg:col-span-5">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-4">
+              <i class="fa-solid fa-lock"></i>
+              BẢO MẬT & ĐỒNG HÀNH 100%
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight mb-4">
+              Hòm Thư Tâm Sự: “Điều Em Muốn Nói”
+            </h2>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+              Bạn đang gặp khó khăn khi hòa nhập lớp mới? Bạn thấy mình hoặc bạn bè bị cô lập, bị chê bai trên mạng, hay bị ép buộc làm những việc không muốn?
+            </p>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-8">
+              <strong>Đừng giữ trong lòng!</strong> Thầy cô Đoàn trường, Tổ tư vấn tâm lý và các anh chị cán bộ Đoàn xã Mường Lầm luôn ở đây để lắng nghe, bảo vệ và san sẻ cùng bạn.
+            </p>
+
+            <!-- 3 Security Pillars -->
+            <div class="space-y-4">
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center flex-shrink-0 text-base">
+                  <i class="fa-solid fa-user-secret"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-800">Tùy Chọn Ẩn Danh Tuyệt Đối</h4>
+                  <p class="text-xs text-slate-500 mt-0.5">Không cần điền họ tên, số điện thoại hay chi đoàn nếu bạn chưa sẵn sàng.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-blue-100 text-doan flex items-center justify-center flex-shrink-0 text-base">
+                  <i class="fa-solid fa-shield-heart"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-800">Bảo Vệ Người Cung Cấp Thông Tin</h4>
+                  <p class="text-xs text-slate-500 mt-0.5">Mọi nội dung chỉ do Bí thư Đoàn trường và cán bộ phụ trách tiếp nhận xử lý nội bộ.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5 p-3.5 rounded-xl bg-white border border-slate-200 shadow-sm">
+                <div class="w-9 h-9 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center flex-shrink-0 text-base">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-slate-800">Đường Dây Nóng Hỗ Trợ 24/7</h4>
+                  <p class="text-xs text-slate-500 mt-0.5">Thầy Bí thư Đoàn trường: <strong>0984.xxx.xxx</strong> • Công an xã: <strong>0212.xxx.xxx</strong></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="lg:col-span-7">
+            <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-lg">
+              
+              <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-6">
+                <div>
+                  <h3 class="text-lg font-extrabold text-slate-900">Gửi Tâm Sự & Báo Cáo Học Đường</h3>
+                  <p class="text-xs text-slate-500 mt-0.5">Tiếng nói của bạn sẽ giúp xây dựng mái trường Mường Lầm an toàn hơn.</p>
+                </div>
+                <i class="fa-solid fa-paper-plane text-2xl text-doan"></i>
+              </div>
+
+              <form id="confessionForm" class="space-y-5">
+                
+                <!-- Anonymous Mode Toggle -->
+                <div class="flex items-center justify-between p-3.5 rounded-xl bg-blue-50/80 border border-blue-200">
+                  <div class="flex items-center gap-2.5">
+                    <i class="fa-solid fa-mask text-doan text-base"></i>
+                    <div>
+                      <span class="text-xs sm:text-sm font-bold text-slate-800">Chế độ gửi ẩn danh hoàn toàn</span>
+                      <p class="text-[11px] text-slate-500">Hệ thống sẽ giấu toàn bộ thông tin cá nhân của bạn</p>
+                    </div>
+                  </div>
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="anonymousToggle" class="sr-only peer" checked>
+                    <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-doan"></div>
+                  </label>
+                </div>
+
+                <!-- Personal Info Inputs (hidden or disabled if anonymous) -->
+                <div id="personalInfoFields" class="grid grid-cols-1 sm:grid-cols-2 gap-4 hidden">
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Họ và tên (Không bắt buộc)</label>
+                    <input type="text" id="senderName" placeholder="Ví dụ: Lò Thị Mai" class="w-full px-3.5 py-2.5 text-xs sm:text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-doan focus:border-doan outline-none">
+                  </div>
+                  <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Chi đoàn / Lớp</label>
+                    <input type="text" id="senderClass" placeholder="Ví dụ: 10A2, Bán trú phòng 3" class="w-full px-3.5 py-2.5 text-xs sm:text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-doan focus:border-doan outline-none">
+                  </div>
+                </div>
+
+                <!-- Topic Selector -->
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">Chủ đề câu chuyện <span class="text-taybac-red">*</span></label>
+                  <select id="messageTopic" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-doan focus:border-doan outline-none bg-white">
+                    <option value="tam-su-lop-10">Bỡ ngỡ lớp 10 & Khó khăn hòa nhập bán trú</option>
+                    <option value="bao-luc-mang">Bị nói xấu, bóc phốt trên Facebook / TikTok</option>
+                    <option value="bat-nat-hoc-duong">Chứng kiến hoặc bị bạn bắt nạt / cô lập</option>
+                    <option value="tinh-ban-dep">Chia sẻ câu chuyện tình bạn đẹp của lớp mình</option>
+                    <option value="gop-y-khac">Góp ý khác cho Ban Chấp hành Đoàn trường</option>
+                  </select>
+                </div>
+
+                <!-- Message Content -->
+                <div>
+                  <div class="flex justify-between items-center mb-1">
+                    <label class="block text-xs font-bold text-slate-700">Nội dung chia sẻ <span class="text-taybac-red">*</span></label>
+                    <span id="charCount" class="text-[11px] text-slate-400">0/1000 ký tự</span>
+                  </div>
+                  <textarea id="messageContent" rows="4" maxlength="1000" required placeholder="Hãy kể cho Đoàn trường nghe những điều bạn đang nghĩ hoặc tình huống bạn đang gặp phải..." class="w-full px-3.5 py-2.5 text-xs sm:text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-doan focus:border-doan outline-none resize-none"></textarea>
+                </div>
+
+                <!-- Urgency Level -->
+                <div class="flex items-center gap-4 text-xs font-semibold text-slate-600">
+                  <span class="text-slate-700 font-bold">Mức độ cần hỗ trợ:</span>
+                  <label class="inline-flex items-center gap-1.5 cursor-pointer">
+                    <input type="radio" name="urgency" value="binh-thuong" checked class="text-doan focus:ring-doan">
+                    <span>Bình thường</span>
+                  </label>
+                  <label class="inline-flex items-center gap-1.5 cursor-pointer text-taybac-red">
+                    <input type="radio" name="urgency" value="khan-cap" class="text-taybac-red focus:ring-taybac-red">
+                    <span>Khẩn cấp (Cần can thiệp ngay)</span>
+                  </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-doan hover:bg-doan-hover text-white font-bold text-sm shadow-md shadow-doan/30 hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  <span>Gửi Ngay Đến Hòm Thư Đoàn Trường</span>
+                </button>
+
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==================== SECTION 4: BẢNG VÀNG CAM KẾT ==================== -->
+    <section id="cam-ket" class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-3">
+            <i class="fa-solid fa-medal text-amber-500"></i>
+            HÀNH ĐỘNG TUỔI TRẺ MƯỜNG LẦM
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900">
+            Bảng Vàng Cam Kết “Trường Học Hạnh Phúc”
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base mt-2">
+            Mỗi chữ ký là một lời thề danh dự của đoàn viên, thanh niên: Chung tay xây đắp tình bạn đẹp, bài trừ bạo lực khỏi mái trường thân yêu.
+          </p>
+
+          <!-- Live Counter Badge -->
+          <div class="mt-6 inline-flex items-center gap-3 bg-gradient-to-r from-blue-50 via-emerald-50 to-blue-50 border-2 border-emerald-300 px-6 py-3 rounded-2xl shadow-sm">
+            <div class="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center text-lg animate-bounce-slow">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="text-left">
+              <span class="text-[11px] font-bold uppercase text-slate-500 tracking-wider">Tổng số lượt đã ký cam kết:</span>
+              <div class="flex items-baseline gap-1">
+                <span id="liveCommitmentCount" class="text-2xl sm:text-3xl font-black text-emerald-700 tracking-tight">842</span>
+                <span class="text-xs font-bold text-slate-600">Đoàn viên, Học sinh</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commitment Input Form Card -->
+        <div class="max-w-3xl mx-auto bg-gradient-to-b from-slate-50 to-white rounded-3xl p-6 sm:p-8 border-2 border-slate-200 shadow-xl mb-12 relative overflow-hidden">
+          
+          <div class="absolute top-0 left-0 right-0 h-2 brocade-border"></div>
+
+          <h3 class="text-lg font-black text-slate-800 text-center mb-6">
+            PHIẾU ĐĂNG KÝ CAM KẾT THI ĐUA NĂM HỌC 2026 – 2027
+          </h3>
+
+          <form id="pledgeForm" class="space-y-6">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">
+                  Họ và tên của bạn <span class="text-taybac-red">*</span>
+                </label>
+                <input type="text" id="pledgeName" required placeholder="Ví dụ: Vàng A Tủa" class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1.5">
+                  Chi đoàn / Lớp học <span class="text-taybac-red">*</span>
+                </label>
+                <select id="pledgeClass" required class="w-full px-4 py-2.5 text-sm rounded-xl border border-slate-300 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none bg-white">
+                  <option value="">-- Chọn Chi đoàn của bạn --</option>
+                  <optgroup label="Khối 10 (Tân học sinh)">
+                    <option value="10A1">Chi đoàn 10A1</option>
+                    <option value="10A2">Chi đoàn 10A2</option>
+                    <option value="10A3">Chi đoàn 10A3</option>
+                    <option value="10A4">Chi đoàn 10A4</option>
+                  </optgroup>
+                  <optgroup label="Khối 11">
+                    <option value="11A1">Chi đoàn 11A1</option>
+                    <option value="11A2">Chi đoàn 11A2</option>
+                    <option value="11A3">Chi đoàn 11A3</option>
+                  </optgroup>
+                  <optgroup label="Khối 12">
+                    <option value="12A1">Chi đoàn 12A1</option>
+                    <option value="12A2">Chi đoàn 12A2</option>
+                    <option value="12A3">Chi đoàn 12A3</option>
+                  </optgroup>
+                  <option value="CLB-ThanhNien">Ban Quản trị Bán trú / Đội Cờ đỏ</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- 3 Core Pledges Checkbox -->
+            <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/80 space-y-3">
+              <span class="text-xs font-black uppercase text-emerald-900 tracking-wider block">
+                Nội dung 3 Cam kết vàng:
+              </span>
+
+              <label class="flex items-start gap-3 cursor-pointer text-xs sm:text-sm text-slate-700">
+                <input type="checkbox" required checked class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-500">
+                <span><strong>1. Không bạo lực:</strong> Không sử dụng bạo lực thể xác, không lăng mạ xúc phạm danh dự của bạn bè cả ở ngoài đời lẫn trên mạng xã hội.</span>
+              </label>
+
+              <label class="flex items-start gap-3 cursor-pointer text-xs sm:text-sm text-slate-700">
+                <input type="checkbox" required checked class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-500">
+                <span><strong>2. Gắn kết yêu thương:</strong> Chủ động giúp đỡ bạn bè cùng tiến bộ, đặc biệt là các bạn học sinh bán trú và các bạn ở bản xa về trường.</span>
+              </label>
+
+              <label class="flex items-start gap-3 cursor-pointer text-xs sm:text-sm text-slate-700">
+                <input type="checkbox" required checked class="mt-0.5 rounded text-emerald-600 focus:ring-emerald-500">
+                <span><strong>3. Dũng cảm lên tiếng:</strong> Không thờ ơ, không quay phim cổ xúy khi thấy bạn bị ức hiếp; sẵn sàng báo ngay cho thầy cô và Đoàn trường.</span>
+              </label>
+            </div>
+
+            <!-- Submit Commitment Button -->
+            <button type="submit" class="w-full py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-black text-sm sm:text-base shadow-xl shadow-emerald-600/30 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-stamp text-lg"></i>
+              <span>TÔI CAM KẾT XÂY DỰNG TÌNH BẠN ĐẸP!</span>
+            </button>
+
+          </form>
+
+        </div>
+
+        <!-- Live Ticker (Marquee) of Recent Pledges -->
+        <div class="max-w-5xl mx-auto overflow-hidden bg-slate-100 rounded-2xl p-3 border border-slate-200">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 bg-emerald-600 text-white text-[11px] font-black rounded-lg uppercase flex-shrink-0 flex items-center gap-1.5">
+              <i class="fa-solid fa-bolt animate-pulse"></i> Vừa cam kết:
+            </span>
+            
+            <div class="overflow-hidden relative w-full">
+              <div id="pledgeTicker" class="flex items-center gap-6 whitespace-nowrap animate-marquee">
+                <!-- Injected Pledges via JS -->
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-700 bg-white px-3 py-1 rounded-full shadow-sm">
+                  <i class="fa-solid fa-circle-check text-emerald-500"></i> Lò Thị Mai (10A1) vừa ký cam kết
+                </span>
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-700 bg-white px-3 py-1 rounded-full shadow-sm">
+                  <i class="fa-solid fa-circle-check text-emerald-500"></i> Cà Văn Tuấn (11A2) vừa ký cam kết
+                </span>
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-700 bg-white px-3 py-1 rounded-full shadow-sm">
+                  <i class="fa-solid fa-circle-check text-emerald-500"></i> Vàng A Dũng (10A3) vừa ký cam kết
+                </span>
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-700 bg-white px-3 py-1 rounded-full shadow-sm">
+                  <i class="fa-solid fa-circle-check text-emerald-500"></i> Quàng Thị Dung (12A1) vừa ký cam kết
+                </span>
+                <span class="inline-flex items-center gap-2 text-xs font-bold text-slate-700 bg-white px-3 py-1 rounded-full shadow-sm">
+                  <i class="fa-solid fa-circle-check text-emerald-500"></i> Lò Văn Nam (10A2) vừa ký cam kết
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-900 text-white border-t border-slate-800 pt-14 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Col 1: Official Organizers -->
+        <div class="lg:col-span-5">
+          <div class="flex items-center gap-3.5 mb-4">
+            <div class="w-12 h-12 bg-white p-1 rounded-full shadow-md flex items-center justify-center flex-shrink-0">
+              <img 
+                src="C:/Users/Administrator/.gemini/antigravity/brain/8b6919e3-9b00-4f51-a26d-884f377e2f23/.user_uploaded/media_1795032603727_be193789.png" 
+                alt="Logo Đoàn" 
+                class="w-full h-full object-contain"
+                onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/vi/thumb/9/9f/Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg/1024px-Huy_hi%E1%BB%87u_%C4%90o%C3%A0n.svg.png';"
+              >
+            </div>
+            <div>
+              <p class="text-xs uppercase font-extrabold text-blue-400">Đơn vị chỉ đạo: Đoàn xã Mường Lầm</p>
+              <h3 class="text-base font-black text-white">ĐOÀN TRƯỜNG THPT MƯỜNG LẦM</h3>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+            Chiến dịch truyền thông giáo dục ý thức chấp hành pháp luật, xây dựng môi trường học đường vùng cao văn minh, nhân ái, không khói thuốc và không bạo lực.
+          </p>
+          <p class="text-xs text-slate-500">
+            <i class="fa-solid fa-location-dot text-red-500 mr-1.5"></i> Xã Mường Lầm, huyện Sông Mã, tỉnh Sơn La.
+          </p>
+        </div>
+
+        <!-- Col 2: Hotline & Contacts -->
+        <div class="lg:col-span-4">
+          <h4 class="text-sm font-extrabold text-white uppercase tracking-wider mb-4 border-l-2 border-doan pl-2.5">
+            Đường Dây Nóng Khẩn Cấp
+          </h4>
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300">
+            <li class="flex items-center gap-3 bg-slate-800/80 p-2.5 rounded-xl border border-slate-700">
+              <div class="w-8 h-8 rounded-lg bg-blue-600/30 text-doan flex items-center justify-center">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-slate-400 block">Thầy Bí thư Đoàn trường THPT Mường Lầm</span>
+                <strong class="text-white">0984.xxx.xxx</strong>
+              </div>
+            </li>
+            <li class="flex items-center gap-3 bg-slate-800/80 p-2.5 rounded-xl border border-slate-700">
+              <div class="w-8 h-8 rounded-lg bg-red-600/30 text-red-400 flex items-center justify-center">
+                <i class="fa-solid fa-shield"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-slate-400 block">Trực ban Công an xã Mường Lầm (24/7)</span>
+                <strong class="text-white">0212.xxx.xxx</strong>
+              </div>
+            </li>
+            <li class="flex items-center gap-3 bg-slate-800/80 p-2.5 rounded-xl border border-slate-700">
+              <div class="w-8 h-8 rounded-lg bg-emerald-600/30 text-emerald-400 flex items-center justify-center">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <div>
+                <span class="text-[11px] text-slate-400 block">Tổ Tư vấn Tâm lý học đường (Phòng Bán trú 1)</span>
+                <strong class="text-white">Trực tiếp các buổi chiều</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Navigation -->
+        <div class="lg:col-span-3">
+          <h4 class="text-sm font-extrabold text-white uppercase tracking-wider mb-4 border-l-2 border-amber-400 pl-2.5">
+            Liên Kết Nhanh
+          </h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="#gioi-thieu" class="hover:text-white transition-colors">Giới thiệu chiến dịch</a></li>
+            <li><a href="#lo-trinh" class="hover:text-white transition-colors">Lộ trình 4 tuần triển khai</a></li>
+            <li><a href="#podcast" class="hover:text-white transition-colors">Nghe Radio Tình Bạn Mường Lầm</a></li>
+            <li><a href="#hom-thu" class="hover:text-white transition-colors">Gửi hòm thư ẩn danh</a></li>
+            <li><a href="#cam-ket" class="hover:text-white transition-colors">Bảng vàng ký cam kết</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>© 2026 Ban Chấp hành Đoàn Trường THPT Mường Lầm. Mọi quyền được bảo lưu.</p>
+        <div class="flex items-center gap-4">
+          <span class="hover:text-slate-400 cursor-pointer">Quy chuẩn nhận diện Đoàn</span>
+          <span>•</span>
+          <span class="hover:text-slate-400 cursor-pointer">Bảo mật hòm thư</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==================== JAVASCRIPT AUDIO ENGINE & LOGIC ==================== -->
+  <script>
+    // --- 1. EPISODES DATA WITH SPEECH LINES & AUDIO URL ---
+    const podcastEpisodes = [
+      {
+        title: "Chung Một Nhịp Cầu Bản Xa",
+        sub: "Tập 1 • Bỡ ngỡ lớp 10 & Rào cản hòa nhập",
+        desc: "Câu chuyện về Mẩy - nữ sinh người Thái mang xôi nếp nương ra trường huyện và tấm lòng ấm áp của các anh chị khóa trên.",
+        duration: "03:45",
+        durationSec: 225,
+        audioUrl: "", // Chừa sẵn đường dẫn MP3 thật (ví dụ: 'audio/tap-1.mp3'). Để trống sẽ tự động dùng giọng AI
+        // Kịch bản đọc từng câu thoại với phân vai chuẩn xác
+        speechLines: [
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Chào mừng các bạn đoàn viên, học sinh đến với Radio Tình Bạn Mường Lầm số 1! Chủ đề hôm nay: Chung Một Nhịp Cầu Bản Xa." },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Tiếng trống khai trường đã điểm. Đối với các bạn học sinh lớp 10 rời bản xa về khu bán trú, những ngày đầu tiên có luôn tràn ngập màu hồng? Hãy cùng lắng nghe tâm sự của Mẩy." },
+          { speaker: "🌸 Bạn Mẩy (Lớp 10)", text: "Trời ơi, hết giờ học rồi... Lớp đông bạn quá, bạn nào quần áo cũng đẹp, nói chuyện rôm rả ghê. Mình ở bản Pá Sáng ra đây, nói tiếng Kinh chưa sõi, chẳng dám bắt chuyện với ai cả..." },
+          { speaker: "🌸 Bạn Mẩy (Lớp 10)", text: "Mẹ dậy từ 4 giờ sáng thổi cho mình nắm xôi nếp nương chấm mắc khén này. Ngon lắm, nhưng ăn ở đây các bạn có cười không nhỉ..." },
+          { speaker: "👤 Bạn Học Sinh", text: "Ôi đứa nào ăn cái gì mà mùi nồng thế? Mùi mắc khén à? Đi học cấp ba rồi mà vẫn mang cả bọc lá chuối như đi làm nương thế kia kìa!" },
+          { speaker: "🌸 Bạn Mẩy (Lớp 10)", text: "Mình... mình đâu có làm gì sai đâu... Sao các bạn lại bảo mình quê một cục... Hay là mình xin bố mẹ về bản, không đi học trường huyện nữa..." },
+          { speaker: "🌼 Bạn Lan (Lớp 10)", text: "Mẩy ơi! Sao cậu lại ngồi thu lu ở góc cầu thang thế này? Cả lớp đang rủ nhau xuống nhà ăn bán trú mà không thấy cậu đâu!" },
+          { speaker: "🌼 Bạn Lan (Lớp 10)", text: "Ủa, mắt cậu đỏ hoe thế kia? Ai trêu cậu à? Nói cho tớ biết đi, tớ bảo thầy Bí thư Đoàn trường giải quyết liền!" },
+          { speaker: "⭐ Anh Tuấn (Lớp 11)", text: "Mùi gì mà thơm phức từ đầu hành lang đến đây thế này nhỉ? Cho anh Tuấn lớp 11 xin một miếng được không?" },
+          { speaker: "⭐ Anh Tuấn (Lớp 11)", text: "Trời ơi, xôi nếp nương đồ bằng chõ gỗ, chấm chẩm chéo mẹ giã tay đúng không Mẩy? Ở trường Mường Lầm này, hơn nửa số bạn là con em các bản xa về đây ở bán trú đấy em ạ!" },
+          { speaker: "⭐ Anh Tuấn (Lớp 11)", text: "Trường mình có truyền thống: Nhà sàn chung một mái, bán trú ấm một lòng. Mỗi món ăn quê, mỗi nét văn hóa của bản làng mình đều là niềm tự hào của học trò Mường Lầm!" },
+          { speaker: "🌼 Bạn Lan (Lớp 10)", text: "Đúng rồi đó Mẩy ơi! Cho tớ ăn chung với nào! Tớ mê tít món xôi nếp nương quê mình luôn! Từ mai, tớ sẽ đưa cậu làm quen với các chị khóa trên, chiều chiều mình cùng ra sân tập bóng chuyền hơi nhé!" },
+          { speaker: "🌸 Bạn Mẩy (Lớp 10)", text: "Cảm ơn Lan, cảm ơn anh Tuấn nhiều lắm... Lan ăn miếng to này đi! Anh Tuấn ăn cùng chúng em nhé!" },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Các bạn học sinh yêu quý! Một lời trêu chọc vô tình có thể làm bạn mình co mình lại. Nhưng một bàn tay chìa ra sẻ chia có thể thắp sáng cả một tương lai." },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Hãy luôn nhớ: Mường Lầm Chung Mái Trường Xanh – Nắm Tay Gắn Kết, Chẳng Đành Tổn Thương!" }
+        ],
+        scriptSummary: `
+          <div class="p-4 bg-blue-50 rounded-2xl border border-blue-200 mb-4">
+            <h5 class="font-bold text-doan mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-bullhorn"></i> Thông điệp cốt lõi:
+            </h5>
+            <p class="text-xs text-slate-700">
+              Sự khác biệt về trang phục, món ăn hay chất giọng bản làng không phải là rào cản, mà là sắc màu đáng tự hào tạo nên bản sắc học trò Mường Lầm!
+            </p>
+          </div>
+
+          <h5 class="font-black text-slate-900 border-b pb-1">Phân vai nhân vật:</h5>
+          <ul class="list-disc pl-5 text-xs space-y-1">
+            <li><strong>MC Dẫn chuyện:</strong> Giọng ấm áp, truyền cảm hứng.</li>
+            <li><strong>Mẩy (Lớp 10):</strong> Nữ sinh người Thái bản Pá Sáng, nhút nhát, sợ bị chê cười.</li>
+            <li><strong>Lan (Lớp 10):</strong> Bạn cùng lớp, sống ở phố huyện nhưng rất cởi mở, tốt bụng.</li>
+            <li><strong>Tuấn (Lớp 11):</strong> Cán bộ Đoàn trường, từng trải qua giai đoạn bán trú lớp 10.</li>
+          </ul>
+
+          <h5 class="font-black text-slate-900 border-b pb-1 pt-2">Trích đoạn nổi bật:</h5>
+          <div class="space-y-2 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+            <p><strong>Mẩy (nghẹn ngào):</strong> "Mẹ dậy từ 4h sáng thổi cho mình nắm xôi nếp nương chấm mắc khén... Thế mà các bạn bảo mùi nồng, nhìn quê một cục... Mình muốn về bản thôi..."</p>
+            <p><strong>Tuấn (cười hiền):</strong> "Mùi thơm nếp nương đồ chõ gỗ chứ quê gì em! Trường THPT Mường Lầm mình có truyền thống: 'Nhà sàn chung một mái, bán trú ấm một lòng'. Mỗi món quà quê các em mang về đây đều là niềm tự hào của bản làng!"</p>
+            <p><strong>Lan (chìa tay):</strong> "Đúng rồi đó Mẩy ơi! Cho tớ ăn chung với nào! Chiều nay mình cùng sang sân bóng chuyền tập nhé!"</p>
+          </div>
+        `
+      },
+      {
+        title: "Bão Giông Sau Màn Hình Nhỏ",
+        sub: "Tập 2 • Bạo lực mạng & Lời bình luận vô tình",
+        desc: "Vàng - nam sinh người H'Mông bị chụp lén áo chàm sờn chỉ đăng lên TikTok giễu cợt và bài học đắt giá về sự tử tế trên không gian mạng.",
+        duration: "03:15",
+        durationSec: 195,
+        audioUrl: "", // Chừa sẵn đường dẫn MP3 thật
+        speechLines: [
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Chào mừng các bạn đến với Tập 2 của Radio Tình Bạn Mường Lầm mang tên: Bão Giông Sau Màn Hình Nhỏ." },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Mạng xã hội giúp chúng ta kết nối, nhưng những lời bình luận vô tình hay trò đùa cợt nhả có thể biến thành cơn ác mộng đối với bạn bè quanh mình." },
+          { speaker: "🎨 Bạn Vàng (Lớp 11)", text: "Mình là Vàng, học sinh người Mông ở khu bán trú. Hôm tập văn nghệ, chiếc áo chàm truyền thống của mình bị sờn một chút ở nách áo vì mặc đã nhiều năm..." },
+          { speaker: "📱 Nhóm Bạn Quay Lén", text: "Nhìn kìa nhìn kìa, hotboy bản Mông mặc áo rách đi tìm người yêu này! Quay clip đăng lên TikTok câu view ngay đi tụi mày ơi!" },
+          { speaker: "🎨 Bạn Vàng (Lớp 11)", text: "Chỉ sau một đêm, đoạn clip đạt hơn mười ngàn lượt xem. Hàng trăm bình luận giễu cợt, xúc phạm... Mình xấu hổ không dám bước chân ra khỏi phòng bán trú, mình muốn bỏ học..." },
+          { speaker: "👩‍🏫 Cô Giáo Bí Thư Đoàn", text: "Vàng ơi, em đừng khóc nữa! Việc dùng hình ảnh của bạn bè để bêu rếu, chế giễu trên không gian mạng là hành vi vi phạm đạo đức học sinh nghiêm trọng và vi phạm Luật An ninh mạng." },
+          { speaker: "👮 Cán Bộ Công An Xã", text: "Hành vi xúc phạm danh dự người khác trên mạng xã hội sẽ bị xử phạt theo Nghị định 144 và quy định của nhà trường. Các em tuyệt đối không được tham gia hùa theo bạo lực mạng!" },
+          { speaker: "📱 Bạn Đăng Clip (Hối Hận)", text: "Vàng ơi, mình vô cùng xin lỗi cậu! Mình chỉ nghĩ quay clip cho vui, không ngờ lại làm cậu tổn thương và hoảng sợ đến thế. Mình đã xóa clip và sẽ công khai xin lỗi cậu trên trang cá nhân." },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Các bạn học sinh hãy nhớ: Trước khi bấm like hay bình luận điều gì trên Facebook, TikTok, hãy đặt mình vào vị trí của người khác. Hãy là một học sinh văn minh cả ngoài đời lẫn trên mạng xã hội!" }
+        ],
+        scriptSummary: `
+          <div class="p-4 bg-amber-50 rounded-2xl border border-amber-200 mb-4">
+            <h5 class="font-bold text-amber-800 mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-triangle-exclamation"></i> Thông điệp cốt lõi:
+            </h5>
+            <p class="text-xs text-slate-700">
+              Một cái bấm like hay comment cợt nhả có thể là nhát dao cứa nát sự tự tin của bạn bè. Đừng làm "anh hùng bàn phím" gieo rắc tổn thương!
+            </p>
+          </div>
+
+          <h5 class="font-black text-slate-900 border-b pb-1">Phân vai nhân vật:</h5>
+          <ul class="list-disc pl-5 text-xs space-y-1">
+            <li><strong>Vàng (Lớp 11):</strong> Nam sinh người Mông, có biệt tài thổi khèn và vẽ tranh.</li>
+            <li><strong>Nhóm quay clip TikTok:</strong> Học sinh vô tư quay lén mà không lường trước hậu quả.</li>
+            <li><strong>Cô giáo Bí thư Đoàn trường & Cán bộ Công an xã:</strong> Can thiệp giải thích luật an ninh mạng.</li>
+          </ul>
+
+          <h5 class="font-black text-slate-900 border-b pb-1 pt-2">Trích đoạn nổi bật:</h5>
+          <div class="space-y-2 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+            <p><strong>Vàng (khóc đóng cửa phòng):</strong> "Clip lên cả chục ngàn view, ai cũng vào bình luận cười cợt chiếc áo chàm của em... Giờ em không dám vác mặt lên lớp nữa..."</p>
+            <p><strong>Cán bộ Công an xã Mường Lầm:</strong> "Xúc phạm danh dự, nhân phẩm người khác trên không gian mạng không chỉ vi phạm đạo đức học đường mà còn bị xử phạt theo Nghị định 144 và Luật An ninh mạng."</p>
+            <p><strong>Bạn học sinh đăng clip (hối hận):</strong> "Mình xin lỗi Vàng! Mình chỉ nghĩ quay cho vui, không ngờ lại làm bạn đau lòng đến thế..."</p>
+          </div>
+        `
+      },
+      {
+        title: "Dũng Cảm Lên Tiếng – Mình Ở Bên Bạn!",
+        sub: "Tập 3 • Ứng xử văn minh khi bạn bị bắt nạt",
+        desc: "Dũng bị ép giặt đồ hộ và nộp tiền ăn sáng; Phong dũng cảm gửi thư vào 'Hòm thư Điều em muốn nói' để giải cứu bạn.",
+        duration: "03:30",
+        durationSec: 210,
+        audioUrl: "", // Chừa sẵn đường dẫn MP3 thật
+        speechLines: [
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Chào mừng các bạn đến với Tập 3 của Radio Tình Bạn Mường Lầm: Dũng Cảm Lên Tiếng – Mình Ở Bên Bạn!" },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Khi chứng kiến một người bạn yếu thế bị bắt nạt, bạn sẽ chọn im lặng cho yên thân, hay dũng cảm lên tiếng tìm sự trợ giúp?" },
+          { speaker: "💧 Bạn Dũng (Lớp 10)", text: "Mình là Dũng, người nhỏ thó nhất khu bán trú. Tuần nào mấy bạn khóa trên cũng ép mình phải giặt chậu quần áo to đùng ở khu giếng nước và lấy tiền ăn sáng của mình... Mình sợ lắm..." },
+          { speaker: "🤝 Bạn Phong (Cùng Phòng)", text: "Mình là Phong, ở chung phòng với Dũng. Nhìn Dũng nhịn ăn sáng, mặt mày hốc hác, mình dằn vặt vô cùng. Nếu mình báo thầy cô, lỡ bị chúng nó trả thù thì sao? Nhưng nếu mình im lặng, mình có xứng đáng là bạn cùng phòng không?" },
+          { speaker: "🤝 Bạn Phong (Cùng Phòng)", text: "Không thể để bạo lực tiếp diễn! Mình nhớ đến Hòm thư Điều Em Muốn Nói của Đoàn trường. Mình đã bí mật viết một bức thư kể lại sự việc và bỏ vào hòm thư ở nhà ăn bán trú." },
+          { speaker: "👨‍🏫 Thầy Tổng Phụ Trách", text: "Cảm ơn em Phong đã vô cùng dũng cảm lên tiếng bảo vệ bạn mình. Danh tính của các em được Đoàn trường bảo mật tuyệt đối 100%!" },
+          { speaker: "👨‍🏫 Thầy Tổng Phụ Trách", text: "Đoàn trường cùng Công an xã đã mời gia đình và các học sinh cá biệt lên làm việc, xử lý kỷ luật và ký cam kết không tái phạm. Dũng đã an toàn và vui vẻ trở lại." },
+          { speaker: "🎙️ MC Dẫn Chuyện", text: "Im lặng trước cái xấu là tiếp tay cho bạo lực. Lên tiếng bảo vệ bạn bè bằng cách báo cho thầy cô, Đoàn trường chính là hành động dũng cảm và văn minh nhất của học trò Mường Lầm!" }
+        ],
+        scriptSummary: `
+          <div class="p-4 bg-emerald-50 rounded-2xl border border-emerald-200 mb-4">
+            <h5 class="font-bold text-emerald-800 mb-1 flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved"></i> Thông điệp cốt lõi:
+            </h5>
+            <p class="text-xs text-slate-700">
+              Im lặng trước cái xấu là tiếp tay cho bạo lực. Lên tiếng bảo vệ bạn mình bằng cách tìm đến Đoàn trường là hành động dũng cảm nhất!
+            </p>
+          </div>
+
+          <h5 class="font-black text-slate-900 border-b pb-1">Phân vai nhân vật:</h5>
+          <ul class="list-disc pl-5 text-xs space-y-1">
+            <li><strong>Dũng (Lớp 10 bán trú):</strong> Học sinh nhỏ con, hiền lành, bị bắt nạt ở khu giếng nước.</li>
+            <li><strong>Phong (Lớp 10 cùng phòng):</strong> Người chứng kiến, dằn vặt nội tâm giữa sợ hãi và lương tâm.</li>
+            <li><strong>Thầy Tổng phụ trách Đoàn:</strong> Lắng nghe bí mật và xử lý nhân văn, nghiêm khắc.</li>
+          </ul>
+
+          <h5 class="font-black text-slate-900 border-b pb-1 pt-2">Trích đoạn nổi bật:</h5>
+          <div class="space-y-2 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-200">
+            <p><strong>Phong (nội tâm):</strong> "Nếu mình báo thầy, lỡ bị chúng nó trả thù thì sao? Nhưng nếu mình im lặng, nhìn Dũng nhịn ăn sáng, mặt mày hốc hác thế kia... mình có xứng đáng là bạn cùng phòng không?"</p>
+            <p><strong>Thầy Tổng phụ trách:</strong> "Cảm ơn em Phong đã dũng cảm bỏ bức thư vào hòm thư ẩn danh. Thầy cam kết danh tính của hai em được giữ kín 100%. Mái trường Mường Lầm này không có chỗ cho hành vi bắt nạt!"</p>
+          </div>
+        `
+      }
+    ];
+
+    // --- 2. AUDIO & SPEECH SYNTHESIS ENGINE ---
+    let currentTrackIndex = 0;
+    let isPlaying = false;
+    let currentLineIndex = 0;
+    let isSpeakingLine = false;
+    let speechTimer = null;
+    let elapsedSeconds = 0;
+    let vietnameseVoice = null;
+
+    const realAudio = document.getElementById('realAudioElement');
+    const mainPlayBtn = document.getElementById('mainPlayBtn');
+    const playIcon = document.getElementById('playIcon');
+    const centerPlayIcon = document.getElementById('centerPlayIcon');
+    const prevTrackBtn = document.getElementById('prevTrackBtn');
+    const nextTrackBtn = document.getElementById('nextTrackBtn');
+    const playerBadge = document.getElementById('playerBadge');
+    const playerEpisodeSub = document.getElementById('playerEpisodeSub');
+    const playerEpisodeTitle = document.getElementById('playerEpisodeTitle');
+    const currentTrackTitle = document.getElementById('currentTrackTitle');
+    const currentTrackDesc = document.getElementById('currentTrackDesc');
+    const currentTimeEl = document.getElementById('currentTime');
+    const totalDurationEl = document.getElementById('totalDuration');
+    const progressBar = document.getElementById('progressBar');
+    const waveContainer = document.getElementById('waveContainer');
+    const playlistCards = document.querySelectorAll('.playlist-card');
+    const audioSourceBadge = document.getElementById('audioSourceBadge');
+
+    // Subtitle elements
+    const subtitleSpeaker = document.getElementById('subtitleSpeaker');
+    const subtitleText = document.getElementById('subtitleText');
+    const subtitleStatus = document.getElementById('subtitleStatus');
+    const subtitleSpeakerIcon = document.getElementById('subtitleSpeakerIcon');
+
+    // Initialize Best Vietnamese Voice available
+    function detectVietnameseVoice() {
+      if (!('speechSynthesis' in window)) return null;
+      const voices = window.speechSynthesis.getVoices();
+      if (!voices || voices.length === 0) return null;
+
+      // 1. Try finding explicit vi-VN voices (e.g. Google tiếng Việt, Microsoft HoaiMy, Mai, Nam...)
+      let voice = voices.find(v => v.lang === 'vi-VN' || v.lang === 'vi_VN');
+      
+      // 2. Try prefix 'vi'
+      if (!voice) {
+        voice = voices.find(v => v.lang && v.lang.toLowerCase().startsWith('vi'));
+      }
+
+      // 3. Try name contains Vietnamese
+      if (!voice) {
+        voice = voices.find(v => /vietnam|vietnamese/i.test(v.name));
+      }
+
+      vietnameseVoice = voice || null;
+      return vietnameseVoice;
+    }
+
+    if ('speechSynthesis' in window) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        detectVietnameseVoice();
+      };
+      detectVietnameseVoice();
+    }
+
+    function isRealMp3Mode() {
+      const track = podcastEpisodes[currentTrackIndex];
+      return Boolean(track.audioUrl && track.audioUrl.trim() !== "");
+    }
+
+    function updateAudioModeBadge() {
+      if (isRealMp3Mode()) {
+        audioSourceBadge.innerHTML = `<i class="fa-solid fa-file-audio text-xs text-emerald-400"></i> Bản thu âm thật (.MP3)`;
+        audioSourceBadge.className = "inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30";
+      } else {
+        audioSourceBadge.innerHTML = `<i class="fa-solid fa-robot text-xs text-amber-400"></i> Giọng đọc AI Web Speech`;
+        audioSourceBadge.className = "inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30";
+      }
+    }
+
+    function loadTrack(index) {
+      // Stop ongoing speech & audio
+      stopAllAudio();
+
+      currentTrackIndex = index;
+      currentLineIndex = 0;
+      elapsedSeconds = 0;
+      const track = podcastEpisodes[index];
+
+      playerBadge.textContent = `Tập ${index + 1} • Kịch nói`;
+      playerEpisodeTitle.textContent = track.title;
+      currentTrackTitle.textContent = `Tập ${index + 1}: ${track.title}`;
+      currentTrackDesc.textContent = track.desc;
+      totalDurationEl.textContent = track.duration;
+      currentTimeEl.textContent = "00:00";
+      progressBar.style.width = '0%';
+
+      updateAudioModeBadge();
+
+      // Reset Subtitle Box
+      subtitleSpeaker.textContent = "🎙️ Lời Dẫn Phát Thanh Viên";
+      subtitleText.textContent = isRealMp3Mode() 
+        ? "Đang sử dụng bản thu âm chính thức. Bấm nút Play để bắt đầu nghe..."
+        : "Bấm nút Play để nghe đọc kịch bản qua giọng đọc AI tự động...";
+      subtitleStatus.textContent = "Sẵn sàng phát";
+      subtitleSpeakerIcon.className = "fa-solid fa-volume-high";
+
+      // If MP3 mode, setup real audio src
+      if (isRealMp3Mode()) {
+        realAudio.src = track.audioUrl;
+      }
+
+      // Update Playlist Cards Active State
+      playlistCards.forEach((card, idx) => {
+        if (idx === index) {
+          card.classList.add('border-doan', 'bg-slate-800');
+          card.classList.remove('border-transparent', 'bg-slate-800/60');
+          card.querySelector('.w-10').classList.add('bg-doan', 'text-white');
+          card.querySelector('.w-10').classList.remove('bg-slate-700', 'text-slate-300');
+        } else {
+          card.classList.remove('border-doan', 'bg-slate-800');
+          card.classList.add('border-transparent', 'bg-slate-800/60');
+          card.querySelector('.w-10').classList.remove('bg-doan', 'text-white');
+          card.querySelector('.w-10').classList.add('bg-slate-700', 'text-slate-300');
+        }
+      });
+    }
+
+    function togglePlay() {
+      if (isPlaying) {
+        pauseAudio();
+      } else {
+        playAudio();
+      }
+    }
+
+    function playAudio() {
+      isPlaying = true;
+      setPlayButtonUI(true);
+
+      if (isRealMp3Mode()) {
+        // --- CHẾ ĐỘ 1: PHÁT FILE MP3 THẬT ---
+        realAudio.play().catch(e => {
+          console.warn("Không tải được file MP3, tự động chuyển sang giọng AI:", e);
+          playWithSpeechAPI();
+        });
+      } else {
+        // --- CHẾ ĐỘ 2: GIỌNG ĐỌC AI TỰ ĐỘNG (WEB SPEECH API) ---
+        playWithSpeechAPI();
+      }
+
+      // Start elapsed timer
+      startElapsedTimer();
+    }
+
+    function playWithSpeechAPI() {
+      if (!('speechSynthesis' in window)) {
+        alert("Trình duyệt của bạn không hỗ trợ tính năng Web Speech API. Vui lòng sử dụng Chrome, Edge hoặc Safari phiên bản mới.");
+        pauseAudio();
+        return;
+      }
+
+      detectVietnameseVoice();
+
+      // If speech synthesis was paused, resume it
+      if (window.speechSynthesis.paused) {
+        window.speechSynthesis.resume();
+        subtitleStatus.textContent = "Đang phát giọng đọc";
+        return;
+      }
+
+      // Read current line
+      speakLine(currentLineIndex);
+    }
+
+    function speakLine(index) {
+      const track = podcastEpisodes[currentTrackIndex];
+      if (!track.speechLines || index >= track.speechLines.length) {
+        // Finished all lines
+        finishEpisode();
+        return;
+      }
+
+      currentLineIndex = index;
+      const line = track.speechLines[index];
+
+      // Update Subtitle UI
+      subtitleSpeaker.textContent = line.speaker;
+      subtitleText.textContent = `"${line.text}"`;
+      subtitleStatus.textContent = `Câu ${index + 1}/${track.speechLines.length}`;
+
+      // Pick icon based on speaker
+      if (line.speaker.includes('MC')) {
+        subtitleSpeakerIcon.className = "fa-solid fa-tower-broadcast text-amber-400";
+      } else if (line.speaker.includes('Cô') || line.speaker.includes('Thầy') || line.speaker.includes('Công An')) {
+        subtitleSpeakerIcon.className = "fa-solid fa-shield text-blue-400";
+      } else {
+        subtitleSpeakerIcon.className = "fa-solid fa-comment-dots text-emerald-400";
+      }
+
+      // Update Progress Bar
+      const percent = ((index + 1) / track.speechLines.length) * 100;
+      progressBar.style.width = `${percent}%`;
+
+      // Cancel any stuck utterances
+      window.speechSynthesis.cancel();
+
+      // Create new Utterance
+      const utterance = new SpeechSynthesisUtterance(line.text);
+      utterance.lang = 'vi-VN';
+      utterance.rate = 0.95; // Radio narrator pace
+      utterance.pitch = 1.0;
+
+      if (vietnameseVoice) {
+        utterance.voice = vietnameseVoice;
+      }
+
+      utterance.onend = () => {
+        if (isPlaying) {
+          // Pause slightly between lines for natural rhythm (500ms)
+          setTimeout(() => {
+            if (isPlaying) {
+              speakLine(currentLineIndex + 1);
+            }
+          }, 500);
+        }
+      };
+
+      utterance.onerror = (event) => {
+        console.warn("SpeechSynthesis error:", event);
+        if (isPlaying && currentLineIndex < track.speechLines.length - 1) {
+          speakLine(currentLineIndex + 1);
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function pauseAudio() {
+      isPlaying = false;
+      setPlayButtonUI(false);
+      clearInterval(speechTimer);
+
+      if (isRealMp3Mode()) {
+        realAudio.pause();
+      } else {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.pause();
+        }
+      }
+
+      subtitleStatus.textContent = "Đang tạm dừng";
+    }
+
+    function stopAllAudio() {
+      isPlaying = false;
+      setPlayButtonUI(false);
+      clearInterval(speechTimer);
+
+      if (realAudio) {
+        realAudio.pause();
+        realAudio.currentTime = 0;
+      }
+
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    function finishEpisode() {
+      stopAllAudio();
+      subtitleSpeaker.textContent = "🎙️ Kết Thúc Chương Trình";
+      subtitleText.textContent = "Bạn đã nghe hết tập này. Hãy chọn tập tiếp theo hoặc gửi tâm sự về Hòm thư!";
+      subtitleStatus.textContent = "Hoàn thành";
+      progressBar.style.width = '100%';
+      
+      // Auto move next track after 2 seconds
+      setTimeout(() => {
+        nextTrack();
+      }, 2000);
+    }
+
+    function setPlayButtonUI(playing) {
+      if (playing) {
+        playIcon.classList.remove('fa-play', 'ml-0.5');
+        playIcon.classList.add('fa-pause');
+        centerPlayIcon.classList.remove('fa-microphone-lines');
+        centerPlayIcon.classList.add('fa-volume-high', 'animate-pulse');
+        waveContainer.classList.remove('opacity-40');
+        waveContainer.classList.add('opacity-100');
+      } else {
+        playIcon.classList.remove('fa-pause');
+        playIcon.classList.add('fa-play', 'ml-0.5');
+        centerPlayIcon.classList.remove('fa-volume-high', 'animate-pulse');
+        centerPlayIcon.classList.add('fa-microphone-lines');
+        waveContainer.classList.remove('opacity-100');
+        waveContainer.classList.add('opacity-40');
+      }
+    }
+
+    function startElapsedTimer() {
+      clearInterval(speechTimer);
+      speechTimer = setInterval(() => {
+        elapsedSeconds++;
+        const mins = Math.floor(elapsedSeconds / 60);
+        const secs = elapsedSeconds % 60;
+        currentTimeEl.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      }, 1000);
+    }
+
+    function nextTrack() {
+      let nextIndex = (currentTrackIndex + 1) % podcastEpisodes.length;
+      loadTrack(nextIndex);
+      playAudio();
+    }
+
+    function prevTrack() {
+      let prevIndex = (currentTrackIndex - 1 + podcastEpisodes.length) % podcastEpisodes.length;
+      loadTrack(prevIndex);
+      playAudio();
+    }
+
+    // Scrubber click - seek line in speech mode or seek time in MP3 mode
+    document.getElementById('progressBarContainer').addEventListener('click', (e) => {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const width = rect.width;
+      const percent = clickX / width;
+
+      const track = podcastEpisodes[currentTrackIndex];
+
+      if (isRealMp3Mode()) {
+        if (realAudio.duration) {
+          realAudio.currentTime = percent * realAudio.duration;
+        }
+      } else {
+        if (track.speechLines && track.speechLines.length > 0) {
+          const targetIndex = Math.floor(percent * track.speechLines.length);
+          currentLineIndex = Math.min(targetIndex, track.speechLines.length - 1);
+          if (isPlaying) {
+            speakLine(currentLineIndex);
+          } else {
+            const line = track.speechLines[currentLineIndex];
+            subtitleSpeaker.textContent = line.speaker;
+            subtitleText.textContent = `"${line.text}"`;
+            subtitleStatus.textContent = `Đã tua đến câu ${currentLineIndex + 1}`;
+            progressBar.style.width = `${percent * 100}%`;
+          }
+        }
+      }
+    });
+
+    // Real Audio Event Listeners for MP3 mode
+    realAudio.addEventListener('timeupdate', () => {
+      if (realAudio.duration) {
+        const percent = (realAudio.currentTime / realAudio.duration) * 100;
+        progressBar.style.width = `${percent}%`;
+        const mins = Math.floor(realAudio.currentTime / 60);
+        const secs = Math.floor(realAudio.currentTime % 60);
+        currentTimeEl.textContent = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+      }
+    });
+
+    realAudio.addEventListener('ended', finishEpisode);
+
+    mainPlayBtn.addEventListener('click', togglePlay);
+    nextTrackBtn.addEventListener('click', nextTrack);
+    prevTrackBtn.addEventListener('click', prevTrack);
+
+    playlistCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const idx = parseInt(card.getAttribute('data-index'));
+        loadTrack(idx);
+        playAudio();
+      });
+    });
+
+
+    // --- 3. SCRIPT MODAL (POPUP) LOGIC ---
+    const scriptModal = document.getElementById('scriptModal');
+    const openScriptModalBtn = document.getElementById('openScriptModalBtn');
+    const closeScriptModalBtn = document.getElementById('closeScriptModalBtn');
+    const closeScriptModalBtn2 = document.getElementById('closeScriptModalBtn2');
+    const modalEpNumber = document.getElementById('modalEpNumber');
+    const modalEpTitle = document.getElementById('modalEpTitle');
+    const modalBody = document.getElementById('modalBody');
+
+    function openModal() {
+      const track = podcastEpisodes[currentTrackIndex];
+      modalEpNumber.textContent = `Kịch bản chi tiết Tập ${currentTrackIndex + 1}`;
+      modalEpTitle.textContent = track.title;
+      modalBody.innerHTML = track.scriptSummary;
+      scriptModal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      scriptModal.classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    openScriptModalBtn.addEventListener('click', openModal);
+    closeScriptModalBtn.addEventListener('click', closeModal);
+    closeScriptModalBtn2.addEventListener('click', closeModal);
+    scriptModal.addEventListener('click', (e) => {
+      if (e.target === scriptModal) closeModal();
+    });
+
+
+    // --- 4. CONFESSION / REPORTING FORM LOGIC ---
+    const confessionForm = document.getElementById('confessionForm');
+    const anonymousToggle = document.getElementById('anonymousToggle');
+    const personalInfoFields = document.getElementById('personalInfoFields');
+    const messageContent = document.getElementById('messageContent');
+    const charCount = document.getElementById('charCount');
+
+    anonymousToggle.addEventListener('change', (e) => {
+      if (e.target.checked) {
+        personalInfoFields.classList.add('hidden');
+      } else {
+        personalInfoFields.classList.remove('hidden');
+      }
+    });
+
+    messageContent.addEventListener('input', (e) => {
+      charCount.textContent = `${e.target.value.length}/1000 ký tự`;
+    });
+
+    confessionForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const topic = document.getElementById('messageTopic').value;
+      const isAnon = anonymousToggle.checked;
+      const name = isAnon ? 'Học sinh ẩn danh' : (document.getElementById('senderName').value.trim() || 'Bạn học sinh');
+
+      // Trigger Confetti
+      confetti({
+        particleCount: 50,
+        spread: 60,
+        origin: { y: 0.8 }
+      });
+
+      alert(`✅ Cảm ơn ${name}! Tâm sự của bạn đã được gửi an toàn đến Ban Chấp hành Đoàn Trường THPT Mường Lầm. Thầy cô và Đoàn trường cam kết lắng nghe và đồng hành bảo vệ bạn.`);
+      confessionForm.reset();
+      charCount.textContent = `0/1000 ký tự`;
+      if (anonymousToggle.checked) {
+        personalInfoFields.classList.add('hidden');
+      }
+    });
+
+
+    // --- 5. PLEDGE (BẢNG VÀNG CAM KẾT) LOGIC ---
+    const pledgeForm = document.getElementById('pledgeForm');
+    const pledgeName = document.getElementById('pledgeName');
+    const pledgeClass = document.getElementById('pledgeClass');
+    const liveCommitmentCount = document.getElementById('liveCommitmentCount');
+    const heroPledgeCount = document.getElementById('heroPledgeCount');
+    const pledgeTicker = document.getElementById('pledgeTicker');
+
+    let currentCommitments = 842;
+
+    pledgeForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = pledgeName.value.trim();
+      const cls = pledgeClass.value;
+
+      if (!name || !cls) return;
+
+      // Increment Counters
+      currentCommitments++;
+      liveCommitmentCount.textContent = currentCommitments;
+      heroPledgeCount.textContent = `${currentCommitments}+`;
+
+      // Big celebratory confetti blast
+      confetti({
+        particleCount: 120,
+        spread: 90,
+        origin: { y: 0.6 }
+      });
+
+      // Add to ticker
+      const newPledgeItem = document.createElement('span');
+      newPledgeItem.className = 'inline-flex items-center gap-2 text-xs font-bold text-slate-800 bg-amber-100 border border-amber-300 px-3 py-1 rounded-full shadow-sm animate-pulse';
+      newPledgeItem.innerHTML = `<i class="fa-solid fa-star text-amber-500"></i> ${name} (${cls}) vừa ký cam kết!`;
+      
+      pledgeTicker.prepend(newPledgeItem);
+
+      alert(`🎉 CHÚC MỪNG BẠN ${name.toUpperCase()} (${cls})!\nBạn vừa hoàn thành ký cam kết xây dựng tình bạn đẹp tại Trường THPT Mường Lầm năm học 2026 - 2027.`);
+      
+      pledgeName.value = '';
+      pledgeClass.value = '';
+    });
+
+
+    // --- 6. MOBILE MENU TOGGLE ---
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    mobileNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Initialize Default Track on load
+    loadTrack(0);
+  </script>
+
+</body>
+</html>
