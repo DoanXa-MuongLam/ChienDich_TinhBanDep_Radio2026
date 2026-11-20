@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+  <!-- Huy Hiệu Đoàn Thanh Niên Cộng Sản Hồ Chí Minh - Chuẩn Vector -->
+  <defs>
+    <!-- Pattern sọc chéo của khiên xanh -->
+    <pattern id="diagonalStripes" width="20" height="20" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="20" stroke="#FFFFFF" stroke-width="2.5" />
+    </pattern>
+
+    <!-- Đường dẫn chữ cong cho dải băng -->
+    <!-- Bán kính R=205, tâm (250, 275) -->
+    <path id="textArcPath" d="M 68 335 A 205 205 0 0 0 432 335" fill="none" />
+  </defs>
+
+  <!-- 1. Vòng tròn nền khiên xanh -->
+  <g id="Shield">
+    <!-- Vòng tròn nền xanh lá -->
+    <circle cx="250" cy="275" r="215" fill="#007A3D" />
+    
+    <!-- Sọc chéo màu trắng bên trong khiên -->
+    <circle cx="250" cy="275" r="210" fill="url(#diagonalStripes)" opacity="0.85" />
+    <circle cx="250" cy="275" r="210" fill="#007A3D" opacity="0.35" />
+
+    <!-- Viền ngoài của khiên -->
+    <circle cx="250" cy="275" r="214" fill="none" stroke="#007A3D" stroke-width="4" />
+  </g>
+
+  <!-- 2. Dải băng trắng viền xanh ôm phía dưới -->
+  <g id="RibbonBanner">
+    <!-- Dải băng trắng cung tròn -->
+    <path d="M 45 285 A 220 220 0 0 0 455 285 L 438 340 A 190 190 0 0 1 62 340 Z" fill="#FFFFFF" stroke="#007A3D" stroke-width="4" stroke-linejoin="round" />
+    
+    <!-- Dòng chữ ĐOÀN THANH NIÊN CỘNG SẢN HỒ CHÍ MINH uốn cong -->
+    <text font-family="'Be Vietnam Pro', 'Arial', sans-serif" font-size="22" font-weight="900" fill="#ED1C24" letter-spacing="2.5">
+      <textPath href="#textArcPath" startOffset="50%" text-anchor="middle">
+        ĐOÀN THANH NIÊN CỘNG SẢN HỒ CHÍ MINH
+      </textPath>
+    </text>
+  </g>
+
+  <!-- 3. Cánh tay nắm cán cờ -->
+  <g id="HandAndArm">
+    <!-- Ống tay áo màu xanh viền trắng -->
+    <path d="M 330 315 L 450 330 L 465 400 L 370 410 Z" fill="#007A3D" stroke="#FFFFFF" stroke-width="3" />
+    <path d="M 360 318 L 452 330 L 458 355 L 366 345 Z" fill="#005A2D" />
+
+    <!-- Cổ tay áo trắng -->
+    <path d="M 330 315 L 366 320 L 370 348 L 334 345 Z" fill="#FFFFFF" stroke="#ED1C24" stroke-width="2" />
+
+    <!-- Cán cờ đỏ chắc khỏe -->
+    <path d="M 210 460 L 268 280 L 260 276 L 202 456 Z" fill="#ED1C24" stroke="#A71016" stroke-width="1.5" />
+
+    <!-- Nắm tay nắm chặt cán cờ (Màu trắng viền đỏ chuẩn huy hiệu) -->
+    <!-- Ngón tay nắm tròn trịa -->
+    <path d="M 235 340 C 220 340, 215 355, 215 370 C 215 385, 225 395, 240 395 L 305 385 C 320 380, 330 365, 330 345 C 330 325, 310 315, 290 318 Z" fill="#FFFFFF" stroke="#ED1C24" stroke-width="5" stroke-linejoin="round" />
+    
+    <!-- Các khe ngón tay nắm -->
+    <path d="M 245 340 C 235 340, 230 350, 230 360 C 230 370, 238 375, 250 375" fill="none" stroke="#ED1C24" stroke-width="4" />
+    <path d="M 240 360 C 232 360, 228 370, 228 380 C 228 390, 238 395, 252 395" fill="none" stroke="#ED1C24" stroke-width="4" />
+    <path d="M 245 380 C 238 380, 235 388, 235 398 C 235 408, 245 412, 260 412" fill="none" stroke="#ED1C24" stroke-width="4" />
+    <path d="M 255 400 C 250 400, 246 408, 246 418 C 246 426, 255 430, 270 428" fill="none" stroke="#ED1C24" stroke-width="4" />
+
+    <!-- Ngón tay cái ôm lấy cán cờ -->
+    <path d="M 268 318 C 250 318, 242 330, 248 348 C 255 365, 275 365, 285 350 L 282 322 Z" fill="#FFFFFF" stroke="#ED1C24" stroke-width="4" />
+  </g>
+
+  <!-- 4. Lá cờ đỏ sao vàng tung bay -->
+  <g id="RedFlag">
+    <!-- Cán cờ phía trên tay -->
+    <path d="M 268 280 L 35 35 L 20 40 L 255 285 Z" fill="#ED1C24" stroke="#A71016" stroke-width="1.5" />
+    
+    <!-- Đỉnh búp măng cán cờ -->
+    <path d="M 35 35 L 42 18 L 30 22 L 20 40 Z" fill="#ED1C24" />
+
+    <!-- Thân lá cờ đỏ uốn lượn phấp phới -->
+    <path d="M 35 35 
+             C 120 40, 220 10, 310 40 
+             C 380 65, 430 45, 470 55 
+             L 420 180 
+             C 450 240, 485 270, 470 330 
+             C 410 300, 350 250, 275 295 
+             C 220 325, 175 275, 120 225 
+             Z" 
+          fill="#ED1C24" 
+          stroke="#C51118" 
+          stroke-width="3" 
+          stroke-linejoin="round" />
+
+    <!-- Ngôi sao vàng năm cánh tỏa sáng giữa lá cờ -->
+    <!-- Tâm sao tại (275, 160) -->
+    <polygon points="275,95 295,145 350,148 308,180 323,232 275,202 227,232 242,180 200,148 255,145" 
+             fill="#FFEB3B" 
+             stroke="#FBC02D" 
+             stroke-width="2" 
+             stroke-linejoin="round" />
+  </g>
+</svg>
