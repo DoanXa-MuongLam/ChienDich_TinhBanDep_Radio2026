@@ -82,6 +82,66 @@
       background: #0066B3;
     }
   </style>
+
+  <!-- Logo Đoàn TNCS Hồ Chí Minh - Trình xử lý hiển thị đa tầng (Không bao giờ vỡ ảnh trên GitHub Pages) -->
+  <script>
+    const LOGO_DOAN_INLINE_SVG = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 560" width="100%" height="100%">
+      <defs>
+        <pattern id="diag" width="20" height="20" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="0" x2="0" y2="20" stroke="#FFFFFF" stroke-width="2.5" />
+        </pattern>
+        <path id="txtArc" d="M 68 335 A 205 205 0 0 0 432 335" fill="none" />
+      </defs>
+      <circle cx="250" cy="275" r="215" fill="#007A3D" />
+      <circle cx="250" cy="275" r="210" fill="url(#diag)" opacity="0.85" />
+      <circle cx="250" cy="275" r="210" fill="#007A3D" opacity="0.35" />
+      <circle cx="250" cy="275" r="214" fill="none" stroke="#007A3D" stroke-width="4" />
+      <path d="M 45 285 A 220 220 0 0 0 455 285 L 438 340 A 190 190 0 0 1 62 340 Z" fill="#FFFFFF" stroke="#007A3D" stroke-width="4" stroke-linejoin="round" />
+      <text font-family="'Be Vietnam Pro', Arial, sans-serif" font-size="22" font-weight="900" fill="#ED1C24" letter-spacing="2.5">
+        <textPath href="#txtArc" startOffset="50%" text-anchor="middle">ĐOÀN THANH NIÊN CỘNG SẢN HỒ CHÍ MINH</textPath>
+      </text>
+      <g id="Arm">
+        <path d="M 330 315 L 450 330 L 465 400 L 370 410 Z" fill="#007A3D" stroke="#FFFFFF" stroke-width="3" />
+        <path d="M 360 318 L 452 330 L 458 355 L 366 345 Z" fill="#005A2D" />
+        <path d="M 330 315 L 366 320 L 370 348 L 334 345 Z" fill="#FFFFFF" stroke="#ED1C24" stroke-width="2" />
+        <path d="M 210 460 L 268 280 L 260 276 L 202 456 Z" fill="#ED1C24" stroke="#A71016" stroke-width="1.5" />
+        <path d="M 235 340 C 220 340, 215 355, 215 370 C 215 385, 225 395, 240 395 L 305 385 C 320 380, 330 365, 330 345 C 330 325, 310 315, 290 318 Z" fill="#FFFFFF" stroke="#ED1C24" stroke-width="5" stroke-linejoin="round" />
+        <path d="M 245 340 C 235 340, 230 350, 230 360 C 230 370, 238 375, 250 375" fill="none" stroke="#ED1C24" stroke-width="4" />
+        <path d="M 240 360 C 232 360, 228 370, 228 380 C 228 390, 238 395, 252 395" fill="none" stroke="#ED1C24" stroke-width="4" />
+        <path d="M 245 380 C 238 380, 235 388, 235 398 C 235 408, 245 412, 260 412" fill="none" stroke="#ED1C24" stroke-width="4" />
+        <path d="M 255 400 C 250 400, 246 408, 246 418 C 246 426, 255 430, 270 428" fill="none" stroke="#ED1C24" stroke-width="4" />
+        <path d="M 268 318 C 250 318, 242 330, 248 348 C 255 365, 275 365, 285 350 L 282 322 Z" fill="#FFFFFF" stroke="#ED1C24" stroke-width="4" />
+      </g>
+      <g id="Flag">
+        <path d="M 268 280 L 35 35 L 20 40 L 255 285 Z" fill="#ED1C24" stroke="#A71016" stroke-width="1.5" />
+        <path d="M 35 35 L 42 18 L 30 22 L 20 40 Z" fill="#ED1C24" />
+        <path d="M 35 35 C 120 40, 220 10, 310 40 C 380 65, 430 45, 470 55 L 420 180 C 450 240, 485 270, 470 330 C 410 300, 350 250, 275 295 C 220 325, 175 275, 120 225 Z" fill="#ED1C24" stroke="#C51118" stroke-width="3" stroke-linejoin="round" />
+        <polygon points="275,95 295,145 350,148 308,180 323,232 275,202 227,232 242,180 200,148 255,145" fill="#FFEB3B" stroke="#FBC02D" stroke-width="2" stroke-linejoin="round" />
+      </g>
+    </svg>`);
+
+    function handleLogoError(img) {
+      const step = parseInt(img.getAttribute('data-err-step') || '0', 10);
+      const candidatePaths = [
+        './assets/images/logo-doan.png',
+        './logo-doan.png',
+        '../../brain/8b6919e3-9b00-4f51-a26d-884f377e2f23/.user_uploaded/media_1795189426858_6be86c05.png',
+        './assets/images/logo-doan.svg',
+        './logo-doan.svg',
+        'assets/images/logo-doan.png',
+        'logo-doan.png',
+        'assets/images/logo-doan.svg',
+        'logo-doan.svg'
+      ];
+      if (step < candidatePaths.length) {
+        img.setAttribute('data-err-step', (step + 1).toString());
+        img.src = candidatePaths[step];
+      } else {
+        img.onerror = null;
+        img.src = LOGO_DOAN_INLINE_SVG;
+      }
+    }
+  </script>
 </head>
 
 <body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-doan selection:text-white">
@@ -95,10 +155,10 @@
         <!-- Logo Đoàn TNCS Hồ Chí Minh -->
         <div class="relative w-12 h-12 flex-shrink-0 bg-white p-0.5 rounded-full shadow-sm border border-slate-100 flex items-center justify-center">
           <img 
-            src="./assets/images/logo-doan.svg" 
+            src="./assets/images/logo-doan.png" 
             alt="Huy hiệu Đoàn TNCS Hồ Chí Minh" 
             class="w-full h-full object-contain"
-            onerror="this.onerror=null; this.src='./assets/images/logo-doan.png';"
+            onerror="handleLogoError(this)"
           >
         </div>
 
@@ -240,10 +300,10 @@
                 <div class="flex items-center gap-3">
                   <div class="w-11 h-11 bg-white rounded-full p-0.5 shadow-md flex items-center justify-center flex-shrink-0">
                     <img 
-                      src="./assets/images/logo-doan.svg" 
+                      src="./assets/images/logo-doan.png" 
                       alt="Logo Đoàn" 
                       class="w-full h-full object-contain"
-                      onerror="this.onerror=null; this.src='./assets/images/logo-doan.png';"
+                      onerror="handleLogoError(this)"
                     >
                   </div>
                   <div>
@@ -432,8 +492,8 @@
 
     <!-- ==================== SECTION 2: RADIO TÌNH BẠN MƯỜNG LẦM ==================== -->
     <section id="podcast" class="py-16 bg-slate-900 text-white relative overflow-hidden">
-      <!-- HTML5 Audio Element for Online TTS Streaming & Real MP3 playback -->
-      <audio id="realAudioElement" preload="auto"></audio>
+      <!-- HTML5 Audio Element for Online TTS Streaming & Real MP3 playback (no-referrer để bypass chặn hotlink/403 trên GitHub Pages) -->
+      <audio id="realAudioElement" preload="auto" referrerpolicy="no-referrer"></audio>
 
       <!-- Glow ambient -->
       <div class="absolute -top-32 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
@@ -467,10 +527,10 @@
                 <div class="flex items-center justify-between">
                   <div class="w-10 h-10 bg-white p-0.5 rounded-full shadow-md flex items-center justify-center">
                     <img 
-                      src="./assets/images/logo-doan.svg" 
+                      src="./assets/images/logo-doan.png" 
                       alt="Logo Đoàn" 
                       class="w-full h-full object-contain"
-                      onerror="this.onerror=null; this.src='./assets/images/logo-doan.png';"
+                      onerror="handleLogoError(this)"
                     >
                   </div>
                   <span id="playerBadge" class="bg-black/40 backdrop-blur-md text-[11px] font-bold text-amber-300 px-3 py-1 rounded-full border border-white/10">
@@ -1000,10 +1060,10 @@
           <div class="flex items-center gap-3.5 mb-4">
             <div class="w-12 h-12 bg-white p-1 rounded-full shadow-md flex items-center justify-center flex-shrink-0">
               <img 
-                src="./assets/images/logo-doan.svg" 
+                src="./assets/images/logo-doan.png" 
                 alt="Logo Đoàn" 
                 class="w-full h-full object-contain"
-                onerror="this.onerror=null; this.src='./assets/images/logo-doan.png';"
+                onerror="handleLogoError(this)"
               >
             </div>
             <div>
@@ -1286,16 +1346,25 @@
       if (!rawText) return "";
       let text = rawText;
 
-      // 1. Phiên âm các con số để giọng đọc phát âm chuẩn tiếng Việt
+      // 1. Phiên âm các con số, tên viết tắt, niên khóa để giọng đọc phát âm chuẩn tiếng Việt
+      text = text.replace(/\bK10\b/gi, "khối mười");
+      text = text.replace(/\bK11\b/gi, "khối mười một");
+      text = text.replace(/\bK12\b/gi, "khối mười hai");
+      text = text.replace(/\b10A1\b/gi, "mười A một");
+      text = text.replace(/\b10A2\b/gi, "mười A hai");
+      text = text.replace(/\b11A1\b/gi, "mười một A một");
+      text = text.replace(/\b12A1\b/gi, "mười hai A một");
       text = text.replace(/\b10\b/g, "mười");
       text = text.replace(/\b11\b/g, "mười một");
       text = text.replace(/\b12\b/g, "mười hai");
-      text = text.replace(/\b4 giờ\b/g, "bốn giờ");
-      text = text.replace(/\b4h\b/g, "bốn giờ");
+      text = text.replace(/\b4 giờ\b/gi, "bốn giờ");
+      text = text.replace(/\b4h\b/gi, "bốn giờ");
       text = text.replace(/\b144\b/g, "một trăm bốn mươi bốn");
       text = text.replace(/2026\s*[-–]\s*2027/g, "hai nghìn không trăm hai mươi sáu, hai nghìn không trăm hai mươi bảy");
+      text = text.replace(/\bTikTok\b/gi, "Tóp Tóp");
+      text = text.replace(/\bFacebook\b/gi, "Phây-s-búc");
 
-      // 2. Chuyển dấu ba chấm (...) thành dấu phẩy nhẹ để tránh bị ngắt ngứ quá lâu
+      // 2. Chuyển dấu ba chấm (...) thành dấu phẩy nhẹ để giọng đọc lấy hơi tự nhiên
       text = text.replace(/\.{3,}/g, ", ");
       text = text.replace(/…/g, ", ");
 
@@ -1306,127 +1375,115 @@
       return text;
     }
 
-    // Helper: Split long sentences into safe chunks for Google TTS (<180 chars)
-    function splitTextIntoChunks(text, maxLength = 160) {
-      if (text.length <= maxLength) return [text];
-      
-      const chunks = [];
-      const sentences = text.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [text];
-      let currentChunk = "";
+    // Helper: Tách câu dài thành các vế câu ngắn tự nhiên (<120 ký tự) theo dấu chấm, phẩy, hỏi, than
+    function splitIntoNaturalClauses(text, maxLength = 120) {
+      if (!text) return [];
+      const rawParts = text.split(/(?<=[.!?])\s+|(?<=[,;])\s+/);
+      const clauses = [];
+      let buffer = "";
 
-      for (let s of sentences) {
-        s = s.trim();
-        if (!s) continue;
-        if ((currentChunk + " " + s).trim().length <= maxLength) {
-          currentChunk = (currentChunk + " " + s).trim();
+      for (let part of rawParts) {
+        part = part.trim();
+        if (!part) continue;
+        if ((buffer + " " + part).trim().length <= maxLength) {
+          buffer = buffer ? (buffer + " " + part) : part;
         } else {
-          if (currentChunk) chunks.push(currentChunk);
-          // If single sentence itself is longer than maxLength, split by comma/semicolon
-          if (s.length > maxLength) {
-            const subparts = s.split(/[,;:]+/);
-            let subChunk = "";
-            for (let sub of subparts) {
-              sub = sub.trim();
-              if ((subChunk + ", " + sub).trim().length <= maxLength) {
-                subChunk = (subChunk + (subChunk ? ", " : "") + sub).trim();
+          if (buffer) clauses.push(buffer);
+          if (part.length > maxLength) {
+            const words = part.split(' ');
+            let wordBuf = "";
+            for (let w of words) {
+              if ((wordBuf + " " + w).trim().length <= maxLength) {
+                wordBuf = wordBuf ? (wordBuf + " " + w) : w;
               } else {
-                if (subChunk) chunks.push(subChunk);
-                subChunk = sub;
+                if (wordBuf) clauses.push(wordBuf);
+                wordBuf = w;
               }
             }
-            if (subChunk) chunks.push(subChunk);
-            currentChunk = "";
+            buffer = wordBuf || "";
           } else {
-            currentChunk = s;
+            buffer = part;
           }
         }
       }
-      if (currentChunk) chunks.push(currentChunk);
-      return chunks.length > 0 ? chunks : [text];
+      if (buffer) clauses.push(buffer);
+      return clauses.length > 0 ? clauses : [text];
     }
 
-    // Asynchronously detect and load Vietnamese voices for Web Speech API
-    function getVoicesAsync() {
-      return new Promise((resolve) => {
-        if (!('speechSynthesis' in window)) {
-          return resolve([]);
-        }
-        let voices = window.speechSynthesis.getVoices();
-        if (voices && voices.length > 0) {
-          voicesLoaded = true;
-          return resolve(voices);
-        }
-        window.speechSynthesis.onvoiceschanged = () => {
-          voices = window.speechSynthesis.getVoices();
-          voicesLoaded = true;
-          resolve(voices);
-        };
-        // Fallback timeout after 1.5s
-        setTimeout(() => {
-          resolve(window.speechSynthesis.getVoices() || []);
-        }, 1500);
-      });
-    }
+    // Biến lưu trữ giọng đọc tiếng Việt tối ưu & Bộ quét bất đồng bộ
+    let voiceScanAttempts = 0;
 
-    async function scanVietnameseVoice() {
-      const voices = await getVoicesAsync();
-      if (!voices || voices.length === 0) {
-        vietnameseVoice = null;
-        return null;
-      }
-
-      // Xếp hạng giọng đọc tiếng Việt theo độ truyền cảm tự nhiên (Natural/Neural)
-      const priorityOrder = [
-        v => /hoaimy.*natural|hoaimy.*online/i.test(v.name),      // Microsoft HoaiMy Online (cực kỳ truyền cảm)
-        v => /google.*ti[eế]ng.*vi[eệ]t/i.test(v.name),           // Google tiếng Việt Wavenet
+    function pickBestVietnameseVoice(voices) {
+      if (!voices || voices.length === 0) return null;
+      const criteria = [
+        v => /hoaimy.*natural|hoaimy.*online/i.test(v.name),      // Microsoft HoaiMy Online (Edge/Windows 11)
+        v => /google.*ti[eế]ng.*vi[eệ]t/i.test(v.name),           // Google tiếng Việt (Chrome)
         v => /namminh.*natural|namminh.*online/i.test(v.name),    // Microsoft NamMinh Online
-        v => /hoaimy/i.test(v.name),                              // HoaiMy
-        v => /namminh/i.test(v.name),                             // NamMinh
+        v => /hoaimy/i.test(v.name),
+        v => /namminh/i.test(v.name),
         v => (v.lang === 'vi-VN' || v.lang === 'vi_VN') && /natural|online|neural/i.test(v.name),
         v => v.lang === 'vi-VN' || v.lang === 'vi_VN',
         v => v.lang && v.lang.toLowerCase().startsWith('vi'),
-        v => /vietnam|vietnamese/i.test(v.name)
+        v => /vietnam|vietnamese|tieng viet/i.test(v.name)
       ];
 
-      for (let matcher of priorityOrder) {
-        const found = voices.find(matcher);
-        if (found) {
-          vietnameseVoice = found;
-          console.log("🎙️ [Radio Mường Lầm] Đã chọn giọng đọc tối ưu:", found.name, `(${found.lang})`);
-          return vietnameseVoice;
-        }
+      for (let test of criteria) {
+        const match = voices.find(test);
+        if (match) return match;
       }
-
-      vietnameseVoice = null;
-      console.log("ℹ️ [Radio Mường Lầm] Hệ thống máy tính chưa cài gói tiếng Việt. Sẽ ưu tiên phát qua Nguồn TTS Audio Stream chất lượng cao!");
       return null;
     }
 
-    // Call voice detection immediately
-    scanVietnameseVoice();
+    function initVoiceScanner() {
+      if (!('speechSynthesis' in window)) return;
+
+      const scan = () => {
+        const voices = window.speechSynthesis.getVoices();
+        if (voices && voices.length > 0) {
+          const found = pickBestVietnameseVoice(voices);
+          if (found) {
+            vietnameseVoice = found;
+            console.log("🎙️ [Radio Mường Lầm] Đã nhận diện giọng đọc tiếng Việt:", found.name, `(${found.lang})`);
+            updateAudioModeBadge();
+          }
+        }
+      };
+
+      scan();
+      window.speechSynthesis.onvoiceschanged = () => {
+        scan();
+      };
+
+      const timer = setInterval(() => {
+        voiceScanAttempts++;
+        scan();
+        if (vietnameseVoice || voiceScanAttempts > 20) {
+          clearInterval(timer);
+        }
+      }, 150);
+    }
+
+    initVoiceScanner();
 
     // Determine target playback mode
     function determinePlaybackMode() {
       const track = podcastEpisodes[currentTrackIndex];
-      const selectedSetting = engineSelector.value;
+      const selectedSetting = engineSelector ? engineSelector.value : 'auto';
 
       if (selectedSetting === 'mp3' || (track.audioUrl && track.audioUrl.trim() !== "")) {
         return 'mp3';
       }
-
       if (selectedSetting === 'speech') {
         return 'speech';
       }
-
       if (selectedSetting === 'stream') {
         return 'stream';
       }
 
       // 'auto' mode:
-      // If MP3 provided -> mp3
       if (track.audioUrl && track.audioUrl.trim() !== "") return 'mp3';
-      // Otherwise: Default to 'stream' (Google TTS online) because it guarantees 100% Vietnamese voice on all platforms!
-      return 'stream';
+      if (vietnameseVoice) return 'speech'; // Ưu tiên Web Speech nếu có sẵn giọng tiếng Việt chất lượng cao
+      return 'stream'; // Fallback sang Google TTS Stream nếu máy tính chưa cài giọng tiếng Việt
     }
 
     function updateAudioModeBadge() {
@@ -1514,27 +1571,26 @@
         if (track.audioUrl) {
           realAudio.src = track.audioUrl;
           realAudio.play().catch(e => {
-            console.warn("⚠️ [Radio Mường Lầm] Không thể tải file MP3, tự động chuyển sang Giọng TTS Trực Tuyến:", e);
-            activeEngine = 'stream';
+            console.warn("⚠️ [Radio Mường Lầm] File MP3 lỗi, chuyển sang TTS:", e);
+            activeEngine = vietnameseVoice ? 'speech' : 'stream';
             updateAudioModeBadge();
-            playWithTTSStream(currentLineIndex);
+            playLine(currentLineIndex);
           });
         } else {
-          activeEngine = 'stream';
+          activeEngine = vietnameseVoice ? 'speech' : 'stream';
           updateAudioModeBadge();
-          playWithTTSStream(currentLineIndex);
+          playLine(currentLineIndex);
         }
-      } else if (activeEngine === 'stream') {
-        playWithTTSStream(currentLineIndex);
       } else {
-        playWithWebSpeech(currentLineIndex);
+        playLine(currentLineIndex);
       }
 
       startElapsedTimer();
     }
 
-    // --- ENGINE 1: GOOGLE TTS AUDIO STREAM (100% TIẾNG VIỆT CHUẨN XÁC) ---
-    function playWithTTSStream(lineIdx) {
+    let hasFallenBackThisLine = false;
+
+    function playLine(lineIdx) {
       const track = podcastEpisodes[currentTrackIndex];
       if (!track.speechLines || lineIdx >= track.speechLines.length) {
         finishEpisode();
@@ -1542,34 +1598,36 @@
       }
 
       currentLineIndex = lineIdx;
+      hasFallenBackThisLine = false;
       const line = track.speechLines[lineIdx];
 
-      // Tiền xử lý văn bản phát thanh viên (phiên âm số, chuẩn hóa ngắt nghỉ)
+      // Tiền xử lý văn bản phát thanh viên (phiên âm số, ngắt nghỉ dấu câu)
       const formattedText = prepareSpeechText(line.text);
-      currentLineChunks = splitTextIntoChunks(formattedText, 160);
+      currentLineChunks = splitIntoNaturalClauses(formattedText, 120);
       currentChunkIndex = 0;
 
-      // Update Subtitle UI (Hiển thị văn bản gốc dễ đọc)
+      // Cập nhật phụ đề UI
       updateSubtitleUI(line, lineIdx, track.speechLines.length);
 
-      // Play the first chunk of this line
-      playTTSChunk();
+      if (activeEngine === 'stream') {
+        playTTSClause();
+      } else {
+        playWebSpeechClause();
+      }
     }
 
-    function playTTSChunk() {
+    // --- ENGINE 1: GOOGLE TTS AUDIO STREAM (100% TIẾNG VIỆT QUA NO-REFERRER) ---
+    function playTTSClause() {
       if (!isPlaying) return;
-
       const track = podcastEpisodes[currentTrackIndex];
-      const line = track.speechLines[currentLineIndex];
 
       if (currentChunkIndex >= currentLineChunks.length) {
-        // Nhịp nghỉ tự nhiên giữa các câu thoại (320ms dứt khoát, chuyên nghiệp)
         clearTimeout(nextLineTimeout);
         nextLineTimeout = setTimeout(() => {
           if (isPlaying) {
-            playWithTTSStream(currentLineIndex + 1);
+            playLine(currentLineIndex + 1);
           }
-        }, 320);
+        }, 300); // Nghỉ 300ms giữa các câu thoại
         return;
       }
 
@@ -1577,72 +1635,72 @@
       const encodedText = encodeURIComponent(chunkText);
       const ttsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=vi&client=tw-ob&q=${encodedText}`;
 
-      console.log(`🔊 [TTS Stream] Câu ${currentLineIndex + 1} (Phần ${currentChunkIndex + 1}/${currentLineChunks.length}):`, chunkText);
-
       realAudio.src = ttsUrl;
       realAudio.volume = currentVolume;
       realAudio.muted = isMuted;
-      realAudio.playbackRate = currentSpeed; // Tốc độ đọc nhanh & truyền cảm (mặc định 1.15x)
+      realAudio.playbackRate = currentSpeed; // Tốc độ 1.15x nhanh, mượt mà
 
-      // When chunk finishes playing, play next chunk
       realAudio.onended = () => {
-        currentChunkIndex++;
-        playTTSChunk();
+        if (isPlaying) {
+          currentChunkIndex++;
+          setTimeout(() => {
+            playTTSClause();
+          }, 100); // Nghỉ nhẹ 100ms giữa các vế câu
+        }
       };
 
-      // Catch error (e.g., offline or network block) -> Fallback to Web Speech
       realAudio.onerror = (e) => {
-        console.warn("⚠️ [TTS Stream Error] Không thể tải audio stream, tự động chuyển sang Web Speech API:", e);
-        activeEngine = 'speech';
-        updateAudioModeBadge();
-        playWithWebSpeech(currentLineIndex);
+        console.warn("⚠️ [TTS Stream Error]:", e);
+        if (isPlaying && !hasFallenBackThisLine) {
+          hasFallenBackThisLine = true;
+          console.log("🔄 Chuyển sang Web Speech API cho câu này");
+          activeEngine = 'speech';
+          updateAudioModeBadge();
+          playWebSpeechClause();
+        } else if (isPlaying) {
+          currentChunkIndex++;
+          playTTSClause();
+        }
       };
 
       realAudio.play().catch(err => {
-        console.warn("⚠️ [TTS Stream Play Warning]:", err);
-        // If autoplay policy blocks or stream fails, fallback to Web Speech
-        activeEngine = 'speech';
-        updateAudioModeBadge();
-        playWithWebSpeech(currentLineIndex);
+        console.warn("⚠️ [TTS Stream Play]:", err);
+        if (isPlaying && !hasFallenBackThisLine) {
+          hasFallenBackThisLine = true;
+          activeEngine = 'speech';
+          updateAudioModeBadge();
+          playWebSpeechClause();
+        }
       });
     }
 
-    // --- ENGINE 2: WEB SPEECH API (GIỌNG TRÌNH DUYỆT CẢI TIẾN) ---
-    async function playWithWebSpeech(lineIdx) {
+    // --- ENGINE 2: WEB SPEECH API (GIỌNG TRÌNH DUYỆT TỰ NHIÊN) ---
+    function playWebSpeechClause() {
+      if (!isPlaying) return;
+      const track = podcastEpisodes[currentTrackIndex];
+
       if (!('speechSynthesis' in window)) {
-        alert("Trình duyệt không hỗ trợ Web Speech API. Hệ thống sẽ chuyển sang Giọng TTS Trực Tuyến!");
         activeEngine = 'stream';
         updateAudioModeBadge();
-        playWithTTSStream(lineIdx);
+        playTTSClause();
         return;
       }
 
-      const track = podcastEpisodes[currentTrackIndex];
-      if (!track.speechLines || lineIdx >= track.speechLines.length) {
-        finishEpisode();
+      if (currentChunkIndex >= currentLineChunks.length) {
+        clearTimeout(nextLineTimeout);
+        nextLineTimeout = setTimeout(() => {
+          if (isPlaying) {
+            playLine(currentLineIndex + 1);
+          }
+        }, 300); // Nghỉ 300ms giữa các câu thoại
         return;
       }
 
-      // Check if paused and resume safely
-      if (window.speechSynthesis.paused) {
-        window.speechSynthesis.resume();
-        subtitleStatus.textContent = "Đang phát giọng đọc";
-        return;
-      }
-
-      await scanVietnameseVoice();
-
-      currentLineIndex = lineIdx;
-      const line = track.speechLines[lineIdx];
-
-      updateSubtitleUI(line, lineIdx, track.speechLines.length);
-
-      // Tiền xử lý văn bản phát thanh viên
-      const formattedText = prepareSpeechText(line.text);
-      const utterance = new SpeechSynthesisUtterance(formattedText);
+      const clauseText = currentLineChunks[currentChunkIndex];
+      const utterance = new SpeechSynthesisUtterance(clauseText);
       utterance.lang = 'vi-VN';
-      utterance.rate = currentSpeed; // 1.15x nhanh, gọn gàng, cuốn hút
-      utterance.pitch = 1.04;        // Cao độ tự nhiên, thanh thoát, ấm áp
+      utterance.rate = currentSpeed; // 1.15x chuẩn phát thanh
+      utterance.pitch = 1.04;        // Cao độ 1.04 ấm áp, tự nhiên
       utterance.volume = currentVolume;
 
       if (vietnameseVoice) {
@@ -1651,35 +1709,33 @@
 
       utterance.onend = () => {
         if (isPlaying) {
-          clearTimeout(nextLineTimeout);
-          nextLineTimeout = setTimeout(() => {
-            if (isPlaying) {
-              playWithWebSpeech(currentLineIndex + 1);
-            }
-          }, 320); // Nhịp nghỉ mượt mà 320ms
+          currentChunkIndex++;
+          setTimeout(() => {
+            playWebSpeechClause();
+          }, 100); // Nghỉ nhẹ 100ms giữa các vế câu
         }
       };
 
       utterance.onerror = (event) => {
         console.warn("⚠️ [WebSpeech Error]:", event.error);
         if (event.error !== 'canceled' && isPlaying) {
-          // If voice missing or language unavailable, switch to Stream
-          if (event.error === 'language-unavailable' || event.error === 'voice-unavailable') {
-            console.log("🔄 Tự động chuyển sang TTS Stream do máy tính thiếu voice tiếng Việt");
+          if (!hasFallenBackThisLine) {
+            hasFallenBackThisLine = true;
+            console.log("🔄 Chuyển sang TTS Stream cho câu thoại này");
             activeEngine = 'stream';
             updateAudioModeBadge();
-            playWithTTSStream(currentLineIndex);
-          } else if (currentLineIndex < track.speechLines.length - 1) {
-            playWithWebSpeech(currentLineIndex + 1);
+            playTTSClause();
+          } else {
+            currentChunkIndex++;
+            playWebSpeechClause();
           }
         }
       };
 
-      // Safely speak without immediate cancel race condition
       try {
         window.speechSynthesis.speak(utterance);
       } catch (err) {
-        console.warn("⚠️ [WebSpeech Speak Exception]:", err);
+        console.warn("⚠️ [WebSpeech Exception]:", err);
       }
     }
 
